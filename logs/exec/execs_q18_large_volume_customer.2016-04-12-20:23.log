@@ -1,0 +1,120 @@
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122015_1504790977.txt
+OK
+Time taken: 4.639 seconds
+OK
+Time taken: 0.089 seconds
+OK
+Time taken: 0.075 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q18_tmp. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 22 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122015_1744510251.txt
+OK
+Time taken: 4.346 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.01 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.673 seconds
+OK
+Time taken: 0.223 seconds
+OK
+Time taken: 0.049 seconds
+OK
+Time taken: 0.066 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.085 seconds
+Total MapReduce jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 7
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122015_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122015_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122015_0001
+2016-04-12 20:15:39,942 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 20:15:49,011 Stage-1 map = 1%,  reduce = 0%
+2016-04-12 20:15:52,033 Stage-1 map = 3%,  reduce = 0%
+2016-04-12 20:15:55,055 Stage-1 map = 5%,  reduce = 0%
+2016-04-12 20:15:58,076 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:16:01,096 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:16:04,117 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:16:07,137 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:16:13,173 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:16:25,244 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:16:28,264 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:16:46,401 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:16:55,470 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:17:13,605 Stage-1 map = 13%,  reduce = 0%
+2016-04-12 20:17:22,674 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:17:39,799 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:17:42,823 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:17:51,888 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 20:17:57,931 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:18:03,974 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:18:10,016 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 20:18:16,057 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:18:22,099 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:18:28,138 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 20:18:37,195 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:18:55,298 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:19:01,334 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:19:16,413 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:19:55,620 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:20:04,669 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:20:16,733 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 20:20:19,752 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:20:25,786 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:20:40,868 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:21:01,977 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:21:04,995 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:21:08,013 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 20:21:16,054 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:21:19,071 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:21:25,102 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:22:10,321 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:22:31,429 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:22:37,463 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:22:46,507 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:23:34,729 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:23:46,783 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604122015_0001 with errors
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_201604122015_0001_m_000001
+
+URL:
+  http://belona.c3local:50030/taskdetails.jsp?jobid=job_201604122015_0001&tipid=task_201604122015_0001_m_000001
+
+Possible error:
+  Out of memory due to hash maps used in map-side aggregation.
+
+Solution:
+  Currently hive.map.aggr.hash.percentmemory is set to 0.5. Try setting it to a lower value. i.e 'set hive.map.aggr.hash.percentmemory = 0.25;'
+-----
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.ExecDriver

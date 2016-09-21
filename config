@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Salaak install path. COMPLETE PATH
+#SALAAK_HOME="/home/hadoop/salaak"
+
+#Complete path to the folder where the queries you want to execute are
+#Be sure to have all of your data on the HDFS
+QUERY_PATH="/home/hadoop/tpch/tpch"
+
+#Is hadoop operating on a distributed way? (Y/N)
+HADOOP_DISTRIBUTED="Y"
+
+#Postgree Configuration
+#Please, create database and user for postgreSQL
+DB_NAME="salaak"
+DB_USER="salaak"
+DB_PASS="salaak"
+
+#Web server configuration
+WEB_HOME="/home/flav/salaak/src/www"
+
+
+# Do not edit this part
+

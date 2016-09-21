@@ -1,0 +1,133 @@
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121958_589774383.txt
+OK
+Time taken: 3.341 seconds
+OK
+Time taken: 0.089 seconds
+OK
+Time taken: 0.066 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.249 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.033 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot create directory /user/hive/warehouse/q18_tmp. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirsInternal(FSNamesystem.java:1761)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirs(FSNamesystem.java:1735)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.mkdirs(NameNode.java:542)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121959_910960142.txt
+OK
+Time taken: 3.456 seconds
+OK
+Time taken: 0.065 seconds
+OK
+Time taken: 0.058 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.235 seconds
+OK
+Time taken: 0.034 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.042 seconds
+OK
+Time taken: 0.066 seconds
+Total MapReduce jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 7
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121958_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121958_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121958_0001
+2016-04-12 19:59:10,416 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 19:59:19,485 Stage-1 map = 2%,  reduce = 0%
+2016-04-12 19:59:22,507 Stage-1 map = 3%,  reduce = 0%
+2016-04-12 19:59:25,529 Stage-1 map = 5%,  reduce = 0%
+2016-04-12 19:59:28,551 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 19:59:31,573 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 19:59:34,594 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 19:59:37,614 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 19:59:40,635 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 19:59:46,672 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 19:59:52,709 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:00:10,831 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:00:16,882 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:00:25,953 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:00:56,178 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:00:59,209 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:01:22,375 Stage-1 map = 3%,  reduce = 0%
+2016-04-12 20:01:29,425 Stage-1 map = 5%,  reduce = 0%
+2016-04-12 20:01:32,449 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:01:34,465 Stage-1 map = 4%,  reduce = 0%
+2016-04-12 20:01:37,485 Stage-1 map = 5%,  reduce = 0%
+2016-04-12 20:01:43,521 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:01:49,558 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:01:55,593 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:02:01,630 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:02:07,669 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:02:31,821 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:03:17,068 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:03:26,120 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:03:35,169 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:03:38,187 Stage-1 map = 5%,  reduce = 0%
+2016-04-12 20:03:41,205 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:03:47,239 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:03:53,272 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 20:03:59,305 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:04:02,322 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 20:04:05,338 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:04:08,355 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 20:04:14,388 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:04:20,421 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:04:29,470 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:04:44,558 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:05:44,853 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:05:49,881 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:06:17,020 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 20:06:23,055 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 20:06:35,110 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:07:17,305 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:07:23,337 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121958_0001 with errors
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_201604121958_0001_m_000001
+
+URL:
+  http://belona.c3local:50030/taskdetails.jsp?jobid=job_201604121958_0001&tipid=task_201604121958_0001_m_000001
+
+Possible error:
+  Out of memory due to hash maps used in map-side aggregation.
+
+Solution:
+  Currently hive.map.aggr.hash.percentmemory is set to 0.5. Try setting it to a lower value. i.e 'set hive.map.aggr.hash.percentmemory = 0.25;'
+-----
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.ExecDriver

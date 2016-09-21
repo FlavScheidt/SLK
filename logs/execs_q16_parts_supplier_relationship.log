@@ -1,0 +1,1268 @@
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121706_2065012643.txt
+OK
+Time taken: 3.437 seconds
+OK
+Time taken: 0.064 seconds
+OK
+Time taken: 0.059 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.01 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.24 seconds
+OK
+Time taken: 0.035 seconds
+OK
+Time taken: 0.049 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot create directory /user/hive/warehouse/q16_parts_supplier_relationship. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirsInternal(FSNamesystem.java:1761)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirs(FSNamesystem.java:1735)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.mkdirs(NameNode.java:542)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121706_270525914.txt
+OK
+Time taken: 3.729 seconds
+OK
+Time taken: 0.065 seconds
+OK
+Time taken: 0.058 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.01 seconds
+OK
+Time taken: 0.229 seconds
+OK
+Time taken: 0.032 seconds
+OK
+Time taken: 0.042 seconds
+OK
+Time taken: 0.058 seconds
+OK
+Time taken: 0.092 seconds
+OK
+Time taken: 0.065 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121706_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121706_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121706_0001
+2016-04-12 17:06:42,773 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:06:45,811 Stage-1 map = 50%,  reduce = 0%
+2016-04-12 17:06:48,848 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:06:51,883 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121706_0001
+Ended Job = -998081795, job is filtered out (removed at runtime).
+Launching Job 2 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121706_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121706_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121706_0002
+2016-04-12 17:06:57,471 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:07:00,493 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:07:03,519 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121706_0002
+Loading data to table supplier_tmp
+99944 Rows loaded to supplier_tmp
+OK
+Time taken: 26.331 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121706_0003, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121706_0003
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121706_0003
+2016-04-12 17:07:09,333 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:07:18,385 Stage-2 map = 12%,  reduce = 0%
+2016-04-12 17:07:21,408 Stage-2 map = 18%,  reduce = 0%
+2016-04-12 17:07:30,491 Stage-2 map = 18%,  reduce = 2%
+2016-04-12 17:07:33,523 Stage-2 map = 34%,  reduce = 6%
+2016-04-12 17:07:36,554 Stage-2 map = 36%,  reduce = 8%
+2016-04-12 17:07:42,614 Stage-2 map = 44%,  reduce = 9%
+2016-04-12 17:07:45,647 Stage-2 map = 53%,  reduce = 11%
+2016-04-12 17:07:48,681 Stage-2 map = 55%,  reduce = 12%
+2016-04-12 17:07:51,719 Stage-2 map = 55%,  reduce = 15%
+2016-04-12 17:07:54,753 Stage-2 map = 61%,  reduce = 18%
+2016-04-12 17:07:57,782 Stage-2 map = 71%,  reduce = 18%
+2016-04-12 17:08:00,811 Stage-2 map = 73%,  reduce = 18%
+2016-04-12 17:08:06,864 Stage-2 map = 79%,  reduce = 20%
+2016-04-12 17:08:09,893 Stage-2 map = 82%,  reduce = 24%
+2016-04-12 17:08:12,920 Stage-2 map = 89%,  reduce = 26%
+2016-04-12 17:08:15,949 Stage-2 map = 91%,  reduce = 27%
+2016-04-12 17:08:18,977 Stage-2 map = 98%,  reduce = 27%
+2016-04-12 17:08:22,005 Stage-2 map = 100%,  reduce = 27%
+2016-04-12 17:08:28,055 Stage-2 map = 100%,  reduce = 32%
+2016-04-12 17:08:31,083 Stage-2 map = 100%,  reduce = 49%
+2016-04-12 17:08:34,109 Stage-2 map = 100%,  reduce = 73%
+2016-04-12 17:08:37,136 Stage-2 map = 100%,  reduce = 84%
+2016-04-12 17:08:40,162 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121706_0003
+Launching Job 2 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121706_0004, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121706_0004
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121706_0004
+2016-04-12 17:08:48,699 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:08:57,743 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 17:09:00,760 Stage-1 map = 27%,  reduce = 0%
+2016-04-12 17:09:03,777 Stage-1 map = 43%,  reduce = 0%
+2016-04-12 17:09:06,792 Stage-1 map = 57%,  reduce = 0%
+2016-04-12 17:09:15,844 Stage-1 map = 71%,  reduce = 0%
+2016-04-12 17:09:18,864 Stage-1 map = 89%,  reduce = 0%
+2016-04-12 17:09:21,885 Stage-1 map = 96%,  reduce = 24%
+2016-04-12 17:09:24,904 Stage-1 map = 100%,  reduce = 24%
+2016-04-12 17:09:30,938 Stage-1 map = 100%,  reduce = 29%
+2016-04-12 17:09:33,957 Stage-1 map = 100%,  reduce = 67%
+2016-04-12 17:09:36,975 Stage-1 map = 100%,  reduce = 73%
+2016-04-12 17:09:39,994 Stage-1 map = 100%,  reduce = 80%
+2016-04-12 17:09:43,013 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 17:09:46,032 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 17:09:49,051 Stage-1 map = 100%,  reduce = 99%
+2016-04-12 17:09:52,071 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121706_0004
+Loading data to table q16_tmp
+7418637 Rows loaded to q16_tmp
+OK
+Time taken: 171.541 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121706_0005, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121706_0005
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121706_0005
+2016-04-12 17:10:00,714 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:10:09,757 Stage-1 map = 22%,  reduce = 0%
+2016-04-12 17:10:12,772 Stage-1 map = 42%,  reduce = 0%
+2016-04-12 17:10:15,787 Stage-1 map = 74%,  reduce = 0%
+2016-04-12 17:10:18,803 Stage-1 map = 80%,  reduce = 0%
+2016-04-12 17:10:24,838 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:10:27,857 Stage-1 map = 100%,  reduce = 33%
+2016-04-12 17:10:30,876 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121706_0005
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121706_0006, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121706_0006
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121706_0006
+2016-04-12 17:10:40,307 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:10:43,323 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 17:10:49,356 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:10:52,374 Stage-2 map = 100%,  reduce = 17%
+2016-04-12 17:10:58,407 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121706_0006
+Loading data to table q16_parts_supplier_relationship
+27840 Rows loaded to q16_parts_supplier_relationship
+OK
+Time taken: 66.348 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121711_102733321.txt
+OK
+Time taken: 3.517 seconds
+OK
+Time taken: 0.081 seconds
+OK
+Time taken: 0.058 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q16_parts_supplier_relationship. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121711_209860695.txt
+OK
+Time taken: 2.975 seconds
+OK
+Time taken: 0.012 seconds
+OK
+Time taken: 0.013 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.648 seconds
+OK
+Time taken: 0.074 seconds
+OK
+Time taken: 0.168 seconds
+OK
+Time taken: 0.033 seconds
+OK
+Time taken: 0.043 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.067 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121711_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121711_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121711_0001
+2016-04-12 17:11:41,795 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:11:44,835 Stage-1 map = 50%,  reduce = 0%
+2016-04-12 17:11:50,902 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:11:53,934 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121711_0001
+Ended Job = 101114819, job is filtered out (removed at runtime).
+Launching Job 2 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121711_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121711_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121711_0002
+2016-04-12 17:11:59,941 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:12:02,963 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:12:05,990 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121711_0002
+Loading data to table supplier_tmp
+99944 Rows loaded to supplier_tmp
+OK
+Time taken: 29.972 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121711_0003, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121711_0003
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121711_0003
+2016-04-12 17:12:11,979 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:12:21,032 Stage-2 map = 12%,  reduce = 0%
+2016-04-12 17:12:24,055 Stage-2 map = 18%,  reduce = 0%
+2016-04-12 17:12:33,137 Stage-2 map = 25%,  reduce = 6%
+2016-04-12 17:12:36,170 Stage-2 map = 34%,  reduce = 6%
+2016-04-12 17:12:39,203 Stage-2 map = 36%,  reduce = 6%
+2016-04-12 17:12:45,268 Stage-2 map = 43%,  reduce = 6%
+2016-04-12 17:12:48,302 Stage-2 map = 52%,  reduce = 12%
+2016-04-12 17:12:51,338 Stage-2 map = 55%,  reduce = 12%
+2016-04-12 17:12:54,373 Stage-2 map = 55%,  reduce = 18%
+2016-04-12 17:12:57,409 Stage-2 map = 61%,  reduce = 18%
+2016-04-12 17:13:00,440 Stage-2 map = 72%,  reduce = 18%
+2016-04-12 17:13:03,469 Stage-2 map = 73%,  reduce = 18%
+2016-04-12 17:13:09,522 Stage-2 map = 79%,  reduce = 24%
+2016-04-12 17:13:12,551 Stage-2 map = 88%,  reduce = 24%
+2016-04-12 17:13:15,580 Stage-2 map = 91%,  reduce = 24%
+2016-04-12 17:13:21,634 Stage-2 map = 98%,  reduce = 24%
+2016-04-12 17:13:24,662 Stage-2 map = 100%,  reduce = 30%
+2016-04-12 17:13:30,715 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 17:13:33,743 Stage-2 map = 100%,  reduce = 67%
+2016-04-12 17:13:36,772 Stage-2 map = 100%,  reduce = 77%
+2016-04-12 17:13:39,796 Stage-2 map = 100%,  reduce = 88%
+2016-04-12 17:13:42,824 Stage-2 map = 100%,  reduce = 99%
+2016-04-12 17:13:44,843 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121711_0003
+Launching Job 2 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121711_0004, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121711_0004
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121711_0004
+2016-04-12 17:13:54,310 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:14:03,356 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 17:14:06,372 Stage-1 map = 26%,  reduce = 0%
+2016-04-12 17:14:09,388 Stage-1 map = 42%,  reduce = 0%
+2016-04-12 17:14:12,404 Stage-1 map = 57%,  reduce = 0%
+2016-04-12 17:14:21,456 Stage-1 map = 71%,  reduce = 0%
+2016-04-12 17:14:24,476 Stage-1 map = 86%,  reduce = 0%
+2016-04-12 17:14:27,496 Stage-1 map = 92%,  reduce = 0%
+2016-04-12 17:14:30,515 Stage-1 map = 94%,  reduce = 29%
+2016-04-12 17:14:33,535 Stage-1 map = 100%,  reduce = 29%
+2016-04-12 17:14:45,604 Stage-1 map = 100%,  reduce = 73%
+2016-04-12 17:14:48,624 Stage-1 map = 100%,  reduce = 80%
+2016-04-12 17:14:51,658 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 17:14:54,677 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 17:14:57,696 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121711_0004
+Loading data to table q16_tmp
+7418637 Rows loaded to q16_tmp
+OK
+Time taken: 174.534 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121711_0005, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121711_0005
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121711_0005
+2016-04-12 17:15:06,412 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:15:15,454 Stage-1 map = 23%,  reduce = 0%
+2016-04-12 17:15:18,470 Stage-1 map = 44%,  reduce = 0%
+2016-04-12 17:15:21,485 Stage-1 map = 76%,  reduce = 0%
+2016-04-12 17:15:24,503 Stage-1 map = 80%,  reduce = 0%
+2016-04-12 17:15:30,539 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:15:33,559 Stage-1 map = 100%,  reduce = 33%
+2016-04-12 17:15:36,578 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121711_0005
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121711_0006, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121711_0006
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121711_0006
+2016-04-12 17:15:45,013 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:15:48,030 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 17:15:54,064 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:15:57,083 Stage-2 map = 100%,  reduce = 17%
+2016-04-12 17:16:03,117 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121711_0006
+Loading data to table q16_parts_supplier_relationship
+27840 Rows loaded to q16_parts_supplier_relationship
+OK
+Time taken: 65.439 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121716_1796363119.txt
+OK
+Time taken: 3.337 seconds
+OK
+Time taken: 0.065 seconds
+OK
+Time taken: 0.058 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q16_parts_supplier_relationship. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121716_1573449916.txt
+OK
+Time taken: 2.935 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.012 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.614 seconds
+OK
+Time taken: 0.065 seconds
+OK
+Time taken: 0.252 seconds
+OK
+Time taken: 0.034 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.042 seconds
+OK
+Time taken: 0.066 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121716_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121716_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121716_0001
+2016-04-12 17:16:46,965 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:16:50,002 Stage-1 map = 50%,  reduce = 0%
+2016-04-12 17:16:56,069 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:16:59,103 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121716_0001
+Ended Job = 1891055207, job is filtered out (removed at runtime).
+Launching Job 2 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121716_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121716_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121716_0002
+2016-04-12 17:17:04,570 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:17:07,592 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:17:10,618 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121716_0002
+Loading data to table supplier_tmp
+99944 Rows loaded to supplier_tmp
+OK
+Time taken: 29.739 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121716_0003, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121716_0003
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121716_0003
+2016-04-12 17:17:16,850 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:17:25,903 Stage-2 map = 12%,  reduce = 0%
+2016-04-12 17:17:28,926 Stage-2 map = 18%,  reduce = 0%
+2016-04-12 17:17:38,007 Stage-2 map = 22%,  reduce = 3%
+2016-04-12 17:17:41,038 Stage-2 map = 27%,  reduce = 3%
+2016-04-12 17:17:44,070 Stage-2 map = 36%,  reduce = 6%
+2016-04-12 17:17:47,105 Stage-2 map = 36%,  reduce = 8%
+2016-04-12 17:17:50,138 Stage-2 map = 43%,  reduce = 8%
+2016-04-12 17:17:53,171 Stage-2 map = 53%,  reduce = 12%
+2016-04-12 17:17:56,206 Stage-2 map = 55%,  reduce = 12%
+2016-04-12 17:17:59,241 Stage-2 map = 55%,  reduce = 15%
+2016-04-12 17:18:02,275 Stage-2 map = 61%,  reduce = 15%
+2016-04-12 17:18:05,304 Stage-2 map = 70%,  reduce = 18%
+2016-04-12 17:18:08,332 Stage-2 map = 73%,  reduce = 18%
+2016-04-12 17:18:14,384 Stage-2 map = 79%,  reduce = 21%
+2016-04-12 17:18:17,412 Stage-2 map = 89%,  reduce = 24%
+2016-04-12 17:18:20,441 Stage-2 map = 91%,  reduce = 26%
+2016-04-12 17:18:26,493 Stage-2 map = 97%,  reduce = 26%
+2016-04-12 17:18:29,521 Stage-2 map = 100%,  reduce = 30%
+2016-04-12 17:18:35,575 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 17:18:38,602 Stage-2 map = 100%,  reduce = 67%
+2016-04-12 17:18:41,629 Stage-2 map = 100%,  reduce = 75%
+2016-04-12 17:18:44,654 Stage-2 map = 100%,  reduce = 87%
+2016-04-12 17:18:47,682 Stage-2 map = 100%,  reduce = 99%
+2016-04-12 17:18:50,707 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121716_0003
+Launching Job 2 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121716_0004, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121716_0004
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121716_0004
+2016-04-12 17:18:59,186 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:19:08,231 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 17:19:11,247 Stage-1 map = 26%,  reduce = 0%
+2016-04-12 17:19:14,263 Stage-1 map = 43%,  reduce = 0%
+2016-04-12 17:19:17,280 Stage-1 map = 57%,  reduce = 0%
+2016-04-12 17:19:23,312 Stage-1 map = 71%,  reduce = 0%
+2016-04-12 17:19:32,363 Stage-1 map = 78%,  reduce = 0%
+2016-04-12 17:19:35,382 Stage-1 map = 82%,  reduce = 24%
+2016-04-12 17:19:38,401 Stage-1 map = 90%,  reduce = 24%
+2016-04-12 17:19:41,419 Stage-1 map = 99%,  reduce = 24%
+2016-04-12 17:19:44,438 Stage-1 map = 100%,  reduce = 24%
+2016-04-12 17:19:53,492 Stage-1 map = 100%,  reduce = 68%
+2016-04-12 17:19:56,511 Stage-1 map = 100%,  reduce = 74%
+2016-04-12 17:19:59,529 Stage-1 map = 100%,  reduce = 81%
+2016-04-12 17:20:02,548 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 17:20:05,567 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121716_0004
+Loading data to table q16_tmp
+7418637 Rows loaded to q16_tmp
+OK
+Time taken: 180.951 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121716_0005, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121716_0005
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121716_0005
+2016-04-12 17:20:17,260 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:20:26,302 Stage-1 map = 22%,  reduce = 0%
+2016-04-12 17:20:29,318 Stage-1 map = 41%,  reduce = 0%
+2016-04-12 17:20:32,333 Stage-1 map = 74%,  reduce = 0%
+2016-04-12 17:20:35,349 Stage-1 map = 80%,  reduce = 0%
+2016-04-12 17:20:41,386 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:20:44,406 Stage-1 map = 100%,  reduce = 27%
+2016-04-12 17:20:47,426 Stage-1 map = 100%,  reduce = 74%
+2016-04-12 17:20:50,446 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121716_0005
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121716_0006, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121716_0006
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121716_0006
+2016-04-12 17:20:59,827 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:21:02,843 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 17:21:05,860 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:21:11,895 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121716_0006
+Loading data to table q16_parts_supplier_relationship
+27840 Rows loaded to q16_parts_supplier_relationship
+OK
+Time taken: 63.322 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121721_774403689.txt
+OK
+Time taken: 3.483 seconds
+OK
+Time taken: 0.064 seconds
+OK
+Time taken: 0.058 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q16_parts_supplier_relationship. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121721_465433507.txt
+OK
+Time taken: 2.902 seconds
+OK
+Time taken: 0.01 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.654 seconds
+OK
+Time taken: 0.064 seconds
+OK
+Time taken: 0.186 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.042 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.049 seconds
+OK
+Time taken: 0.067 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121721_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121721_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121721_0001
+2016-04-12 17:21:56,533 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:21:59,571 Stage-1 map = 50%,  reduce = 0%
+2016-04-12 17:22:02,608 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:22:05,642 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121721_0001
+Ended Job = 993403721, job is filtered out (removed at runtime).
+Launching Job 2 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121721_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121721_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121721_0002
+2016-04-12 17:22:12,277 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:22:15,299 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:22:18,325 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121721_0002
+Loading data to table supplier_tmp
+99944 Rows loaded to supplier_tmp
+OK
+Time taken: 27.479 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121721_0003, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121721_0003
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121721_0003
+2016-04-12 17:22:23,536 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:22:32,588 Stage-2 map = 12%,  reduce = 0%
+2016-04-12 17:22:35,610 Stage-2 map = 18%,  reduce = 0%
+2016-04-12 17:22:44,695 Stage-2 map = 25%,  reduce = 6%
+2016-04-12 17:22:47,726 Stage-2 map = 34%,  reduce = 6%
+2016-04-12 17:22:50,758 Stage-2 map = 36%,  reduce = 6%
+2016-04-12 17:22:56,820 Stage-2 map = 43%,  reduce = 6%
+2016-04-12 17:22:59,854 Stage-2 map = 52%,  reduce = 12%
+2016-04-12 17:23:02,888 Stage-2 map = 55%,  reduce = 12%
+2016-04-12 17:23:05,924 Stage-2 map = 55%,  reduce = 17%
+2016-04-12 17:23:08,958 Stage-2 map = 61%,  reduce = 17%
+2016-04-12 17:23:11,989 Stage-2 map = 71%,  reduce = 17%
+2016-04-12 17:23:15,019 Stage-2 map = 73%,  reduce = 18%
+2016-04-12 17:23:21,071 Stage-2 map = 79%,  reduce = 24%
+2016-04-12 17:23:24,100 Stage-2 map = 88%,  reduce = 24%
+2016-04-12 17:23:27,128 Stage-2 map = 91%,  reduce = 24%
+2016-04-12 17:23:33,185 Stage-2 map = 98%,  reduce = 24%
+2016-04-12 17:23:36,213 Stage-2 map = 100%,  reduce = 30%
+2016-04-12 17:23:42,264 Stage-2 map = 100%,  reduce = 32%
+2016-04-12 17:23:45,293 Stage-2 map = 100%,  reduce = 69%
+2016-04-12 17:23:48,319 Stage-2 map = 100%,  reduce = 81%
+2016-04-12 17:23:51,347 Stage-2 map = 100%,  reduce = 93%
+2016-04-12 17:23:54,374 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121721_0003
+Launching Job 2 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121721_0004, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121721_0004
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121721_0004
+2016-04-12 17:24:02,868 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:24:11,911 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 17:24:14,927 Stage-1 map = 27%,  reduce = 0%
+2016-04-12 17:24:17,944 Stage-1 map = 44%,  reduce = 0%
+2016-04-12 17:24:20,960 Stage-1 map = 57%,  reduce = 0%
+2016-04-12 17:24:30,012 Stage-1 map = 71%,  reduce = 0%
+2016-04-12 17:24:33,035 Stage-1 map = 86%,  reduce = 0%
+2016-04-12 17:24:36,054 Stage-1 map = 92%,  reduce = 29%
+2016-04-12 17:24:39,073 Stage-1 map = 100%,  reduce = 29%
+2016-04-12 17:24:48,125 Stage-1 map = 100%,  reduce = 67%
+2016-04-12 17:24:51,144 Stage-1 map = 100%,  reduce = 73%
+2016-04-12 17:24:54,163 Stage-1 map = 100%,  reduce = 80%
+2016-04-12 17:24:57,183 Stage-1 map = 100%,  reduce = 87%
+2016-04-12 17:25:00,204 Stage-1 map = 100%,  reduce = 94%
+2016-04-12 17:25:03,224 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121721_0004
+Loading data to table q16_tmp
+7418637 Rows loaded to q16_tmp
+OK
+Time taken: 167.875 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121721_0005, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121721_0005
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121721_0005
+2016-04-12 17:25:11,896 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:25:20,937 Stage-1 map = 23%,  reduce = 0%
+2016-04-12 17:25:23,953 Stage-1 map = 43%,  reduce = 0%
+2016-04-12 17:25:26,968 Stage-1 map = 76%,  reduce = 0%
+2016-04-12 17:25:29,984 Stage-1 map = 80%,  reduce = 0%
+2016-04-12 17:25:36,020 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:25:39,040 Stage-1 map = 100%,  reduce = 33%
+2016-04-12 17:25:42,060 Stage-1 map = 100%,  reduce = 73%
+2016-04-12 17:25:45,080 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121721_0005
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121721_0006, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121721_0006
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121721_0006
+2016-04-12 17:25:54,492 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:25:57,509 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 17:26:00,527 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:26:06,562 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121721_0006
+Loading data to table q16_parts_supplier_relationship
+27840 Rows loaded to q16_parts_supplier_relationship
+OK
+Time taken: 63.364 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121726_1397532928.txt
+OK
+Time taken: 3.286 seconds
+OK
+Time taken: 0.065 seconds
+OK
+Time taken: 0.058 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q16_parts_supplier_relationship. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 25 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121726_1053141918.txt
+OK
+Time taken: 2.761 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.59 seconds
+OK
+Time taken: 0.072 seconds
+OK
+Time taken: 0.161 seconds
+OK
+Time taken: 0.033 seconds
+OK
+Time taken: 0.034 seconds
+OK
+Time taken: 0.034 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.066 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121726_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121726_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121726_0001
+2016-04-12 17:26:50,234 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:26:53,271 Stage-1 map = 50%,  reduce = 0%
+2016-04-12 17:26:59,341 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:27:02,373 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121726_0001
+Ended Job = 169595785, job is filtered out (removed at runtime).
+Launching Job 2 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121726_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121726_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121726_0002
+2016-04-12 17:27:08,081 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:27:11,103 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:27:14,130 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121726_0002
+Loading data to table supplier_tmp
+99944 Rows loaded to supplier_tmp
+OK
+Time taken: 30.496 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121726_0003, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121726_0003
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121726_0003
+2016-04-12 17:27:19,950 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:27:29,003 Stage-2 map = 12%,  reduce = 0%
+2016-04-12 17:27:32,026 Stage-2 map = 18%,  reduce = 0%
+2016-04-12 17:27:41,109 Stage-2 map = 22%,  reduce = 3%
+2016-04-12 17:27:44,140 Stage-2 map = 31%,  reduce = 6%
+2016-04-12 17:27:47,172 Stage-2 map = 36%,  reduce = 6%
+2016-04-12 17:27:53,236 Stage-2 map = 43%,  reduce = 8%
+2016-04-12 17:27:56,271 Stage-2 map = 53%,  reduce = 11%
+2016-04-12 17:27:59,307 Stage-2 map = 55%,  reduce = 12%
+2016-04-12 17:28:02,352 Stage-2 map = 55%,  reduce = 15%
+2016-04-12 17:28:05,387 Stage-2 map = 61%,  reduce = 18%
+2016-04-12 17:28:08,417 Stage-2 map = 71%,  reduce = 18%
+2016-04-12 17:28:11,446 Stage-2 map = 73%,  reduce = 18%
+2016-04-12 17:28:17,499 Stage-2 map = 79%,  reduce = 21%
+2016-04-12 17:28:20,528 Stage-2 map = 87%,  reduce = 24%
+2016-04-12 17:28:23,556 Stage-2 map = 91%,  reduce = 24%
+2016-04-12 17:28:26,587 Stage-2 map = 91%,  reduce = 26%
+2016-04-12 17:28:29,616 Stage-2 map = 99%,  reduce = 26%
+2016-04-12 17:28:32,644 Stage-2 map = 100%,  reduce = 27%
+2016-04-12 17:28:35,672 Stage-2 map = 100%,  reduce = 30%
+2016-04-12 17:28:38,700 Stage-2 map = 100%,  reduce = 50%
+2016-04-12 17:28:41,728 Stage-2 map = 100%,  reduce = 75%
+2016-04-12 17:28:44,754 Stage-2 map = 100%,  reduce = 87%
+2016-04-12 17:28:47,784 Stage-2 map = 100%,  reduce = 97%
+2016-04-12 17:28:50,807 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121726_0003
+Launching Job 2 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121726_0004, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121726_0004
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121726_0004
+2016-04-12 17:28:59,310 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:29:08,355 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 17:29:11,372 Stage-1 map = 27%,  reduce = 0%
+2016-04-12 17:29:14,389 Stage-1 map = 43%,  reduce = 0%
+2016-04-12 17:29:17,407 Stage-1 map = 57%,  reduce = 0%
+2016-04-12 17:29:26,464 Stage-1 map = 71%,  reduce = 0%
+2016-04-12 17:29:29,485 Stage-1 map = 92%,  reduce = 0%
+2016-04-12 17:29:32,505 Stage-1 map = 96%,  reduce = 24%
+2016-04-12 17:29:35,525 Stage-1 map = 100%,  reduce = 24%
+2016-04-12 17:29:41,564 Stage-1 map = 100%,  reduce = 29%
+2016-04-12 17:29:44,584 Stage-1 map = 100%,  reduce = 67%
+2016-04-12 17:29:47,604 Stage-1 map = 100%,  reduce = 74%
+2016-04-12 17:29:50,624 Stage-1 map = 100%,  reduce = 81%
+2016-04-12 17:29:53,645 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 17:29:56,665 Stage-1 map = 100%,  reduce = 95%
+2016-04-12 17:29:59,687 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121726_0004
+Loading data to table q16_tmp
+7418637 Rows loaded to q16_tmp
+OK
+Time taken: 168.567 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121726_0005, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121726_0005
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121726_0005
+2016-04-12 17:30:08,378 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:30:17,421 Stage-1 map = 23%,  reduce = 0%
+2016-04-12 17:30:20,437 Stage-1 map = 44%,  reduce = 0%
+2016-04-12 17:30:23,453 Stage-1 map = 76%,  reduce = 0%
+2016-04-12 17:30:26,470 Stage-1 map = 80%,  reduce = 0%
+2016-04-12 17:30:32,508 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:30:35,528 Stage-1 map = 100%,  reduce = 33%
+2016-04-12 17:30:38,549 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121726_0005
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121726_0006, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121726_0006
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121726_0006
+2016-04-12 17:30:47,951 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:30:50,968 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 17:30:57,003 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:31:00,021 Stage-2 map = 100%,  reduce = 17%
+2016-04-12 17:31:06,055 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121726_0006
+Loading data to table q16_parts_supplier_relationship
+27840 Rows loaded to q16_parts_supplier_relationship
+OK
+Time taken: 66.372 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121731_1293450735.txt
+OK
+Time taken: 3.582 seconds
+OK
+Time taken: 0.064 seconds
+OK
+Time taken: 0.058 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q16_parts_supplier_relationship. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121731_1583320921.txt
+OK
+Time taken: 2.847 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.62 seconds
+OK
+Time taken: 0.065 seconds
+OK
+Time taken: 0.155 seconds
+OK
+Time taken: 0.033 seconds
+OK
+Time taken: 0.034 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.075 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121731_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121731_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121731_0001
+2016-04-12 17:31:50,845 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:31:53,882 Stage-1 map = 50%,  reduce = 0%
+2016-04-12 17:31:59,964 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:32:02,998 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121731_0001
+Ended Job = 1416640470, job is filtered out (removed at runtime).
+Launching Job 2 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121731_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121731_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121731_0002
+2016-04-12 17:32:08,577 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:32:11,599 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:32:14,625 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121731_0002
+Loading data to table supplier_tmp
+99944 Rows loaded to supplier_tmp
+OK
+Time taken: 30.044 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121731_0003, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121731_0003
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121731_0003
+2016-04-12 17:32:20,405 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:32:29,457 Stage-2 map = 12%,  reduce = 0%
+2016-04-12 17:32:32,480 Stage-2 map = 18%,  reduce = 0%
+2016-04-12 17:32:41,561 Stage-2 map = 22%,  reduce = 3%
+2016-04-12 17:32:44,593 Stage-2 map = 31%,  reduce = 6%
+2016-04-12 17:32:47,624 Stage-2 map = 36%,  reduce = 6%
+2016-04-12 17:32:53,688 Stage-2 map = 43%,  reduce = 9%
+2016-04-12 17:32:56,721 Stage-2 map = 53%,  reduce = 12%
+2016-04-12 17:32:59,755 Stage-2 map = 55%,  reduce = 12%
+2016-04-12 17:33:02,789 Stage-2 map = 55%,  reduce = 15%
+2016-04-12 17:33:05,824 Stage-2 map = 62%,  reduce = 18%
+2016-04-12 17:33:08,864 Stage-2 map = 71%,  reduce = 18%
+2016-04-12 17:33:11,893 Stage-2 map = 73%,  reduce = 18%
+2016-04-12 17:33:17,944 Stage-2 map = 79%,  reduce = 21%
+2016-04-12 17:33:20,972 Stage-2 map = 87%,  reduce = 24%
+2016-04-12 17:33:24,000 Stage-2 map = 91%,  reduce = 24%
+2016-04-12 17:33:27,033 Stage-2 map = 91%,  reduce = 26%
+2016-04-12 17:33:30,060 Stage-2 map = 99%,  reduce = 26%
+2016-04-12 17:33:33,088 Stage-2 map = 100%,  reduce = 27%
+2016-04-12 17:33:36,115 Stage-2 map = 100%,  reduce = 29%
+2016-04-12 17:33:39,143 Stage-2 map = 100%,  reduce = 50%
+2016-04-12 17:33:42,171 Stage-2 map = 100%,  reduce = 74%
+2016-04-12 17:33:45,197 Stage-2 map = 100%,  reduce = 86%
+2016-04-12 17:33:48,224 Stage-2 map = 100%,  reduce = 97%
+2016-04-12 17:33:51,250 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121731_0003
+Launching Job 2 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121731_0004, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121731_0004
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121731_0004
+2016-04-12 17:33:59,731 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:34:08,776 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 17:34:11,793 Stage-1 map = 26%,  reduce = 0%
+2016-04-12 17:34:14,810 Stage-1 map = 43%,  reduce = 0%
+2016-04-12 17:34:17,826 Stage-1 map = 57%,  reduce = 0%
+2016-04-12 17:34:26,879 Stage-1 map = 71%,  reduce = 0%
+2016-04-12 17:34:29,898 Stage-1 map = 90%,  reduce = 0%
+2016-04-12 17:34:32,917 Stage-1 map = 97%,  reduce = 24%
+2016-04-12 17:34:35,937 Stage-1 map = 100%,  reduce = 24%
+2016-04-12 17:34:41,973 Stage-1 map = 100%,  reduce = 29%
+2016-04-12 17:34:44,994 Stage-1 map = 100%,  reduce = 67%
+2016-04-12 17:34:48,014 Stage-1 map = 100%,  reduce = 74%
+2016-04-12 17:34:51,034 Stage-1 map = 100%,  reduce = 81%
+2016-04-12 17:34:54,054 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 17:34:57,074 Stage-1 map = 100%,  reduce = 96%
+2016-04-12 17:35:00,094 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121731_0004
+Loading data to table q16_tmp
+7418637 Rows loaded to q16_tmp
+OK
+Time taken: 168.466 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121731_0005, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121731_0005
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121731_0005
+2016-04-12 17:35:08,834 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:35:17,876 Stage-1 map = 25%,  reduce = 0%
+2016-04-12 17:35:20,891 Stage-1 map = 46%,  reduce = 0%
+2016-04-12 17:35:23,907 Stage-1 map = 78%,  reduce = 0%
+2016-04-12 17:35:26,923 Stage-1 map = 80%,  reduce = 0%
+2016-04-12 17:35:32,959 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:35:35,978 Stage-1 map = 100%,  reduce = 27%
+2016-04-12 17:35:45,034 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121731_0005
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121731_0006, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121731_0006
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121731_0006
+2016-04-12 17:35:54,442 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:35:57,458 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 17:36:03,491 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:36:06,510 Stage-2 map = 100%,  reduce = 17%
+2016-04-12 17:36:12,544 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121731_0006
+Loading data to table q16_parts_supplier_relationship
+27840 Rows loaded to q16_parts_supplier_relationship
+OK
+Time taken: 72.464 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121736_956379811.txt
+OK
+Time taken: 3.498 seconds
+OK
+Time taken: 0.073 seconds
+OK
+Time taken: 0.067 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q16_parts_supplier_relationship. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604121736_972680884.txt
+OK
+Time taken: 3.01 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.564 seconds
+OK
+Time taken: 0.08 seconds
+OK
+Time taken: 0.189 seconds
+OK
+Time taken: 0.033 seconds
+OK
+Time taken: 0.033 seconds
+OK
+Time taken: 0.034 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.075 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121736_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121736_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121736_0001
+2016-04-12 17:36:57,225 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:37:00,263 Stage-1 map = 50%,  reduce = 0%
+2016-04-12 17:37:03,305 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:37:06,340 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121736_0001
+Ended Job = -1311417564, job is filtered out (removed at runtime).
+Launching Job 2 out of 2
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_201604121736_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121736_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121736_0002
+2016-04-12 17:37:12,287 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:37:15,309 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:37:18,336 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121736_0002
+Loading data to table supplier_tmp
+99944 Rows loaded to supplier_tmp
+OK
+Time taken: 26.818 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121736_0003, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121736_0003
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121736_0003
+2016-04-12 17:37:24,556 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:37:33,608 Stage-2 map = 11%,  reduce = 0%
+2016-04-12 17:37:36,631 Stage-2 map = 18%,  reduce = 0%
+2016-04-12 17:37:45,712 Stage-2 map = 23%,  reduce = 0%
+2016-04-12 17:37:48,743 Stage-2 map = 29%,  reduce = 3%
+2016-04-12 17:37:51,775 Stage-2 map = 36%,  reduce = 8%
+2016-04-12 17:37:54,808 Stage-2 map = 41%,  reduce = 8%
+2016-04-12 17:38:00,874 Stage-2 map = 53%,  reduce = 10%
+2016-04-12 17:38:03,909 Stage-2 map = 55%,  reduce = 12%
+2016-04-12 17:38:06,944 Stage-2 map = 59%,  reduce = 12%
+2016-04-12 17:38:09,980 Stage-2 map = 64%,  reduce = 16%
+2016-04-12 17:38:13,013 Stage-2 map = 70%,  reduce = 20%
+2016-04-12 17:38:16,042 Stage-2 map = 77%,  reduce = 20%
+2016-04-12 17:38:19,071 Stage-2 map = 81%,  reduce = 20%
+2016-04-12 17:38:22,100 Stage-2 map = 82%,  reduce = 23%
+2016-04-12 17:38:25,128 Stage-2 map = 89%,  reduce = 24%
+2016-04-12 17:38:27,148 Stage-2 map = 93%,  reduce = 25%
+2016-04-12 17:38:28,161 Stage-2 map = 95%,  reduce = 25%
+2016-04-12 17:38:30,184 Stage-2 map = 100%,  reduce = 26%
+2016-04-12 17:38:31,196 Stage-2 map = 100%,  reduce = 27%
+2016-04-12 17:38:33,217 Stage-2 map = 100%,  reduce = 29%
+2016-04-12 17:38:39,268 Stage-2 map = 100%,  reduce = 50%
+2016-04-12 17:38:42,295 Stage-2 map = 100%,  reduce = 76%
+2016-04-12 17:38:45,323 Stage-2 map = 100%,  reduce = 88%
+2016-04-12 17:38:48,356 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121736_0003
+Launching Job 2 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121736_0004, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121736_0004
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121736_0004
+2016-04-12 17:38:57,856 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:39:06,901 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 17:39:09,918 Stage-1 map = 26%,  reduce = 0%
+2016-04-12 17:39:12,935 Stage-1 map = 43%,  reduce = 0%
+2016-04-12 17:39:15,952 Stage-1 map = 57%,  reduce = 0%
+2016-04-12 17:39:21,988 Stage-1 map = 71%,  reduce = 0%
+2016-04-12 17:39:28,028 Stage-1 map = 78%,  reduce = 0%
+2016-04-12 17:39:31,048 Stage-1 map = 80%,  reduce = 24%
+2016-04-12 17:39:34,070 Stage-1 map = 89%,  reduce = 24%
+2016-04-12 17:39:37,090 Stage-1 map = 98%,  reduce = 24%
+2016-04-12 17:39:40,109 Stage-1 map = 100%,  reduce = 24%
+2016-04-12 17:39:46,145 Stage-1 map = 100%,  reduce = 29%
+2016-04-12 17:39:49,165 Stage-1 map = 100%,  reduce = 69%
+2016-04-12 17:39:52,185 Stage-1 map = 100%,  reduce = 76%
+2016-04-12 17:39:55,219 Stage-1 map = 100%,  reduce = 82%
+2016-04-12 17:39:58,238 Stage-1 map = 100%,  reduce = 89%
+2016-04-12 17:40:00,251 Stage-1 map = 100%,  reduce = 97%
+2016-04-12 17:40:03,271 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121736_0004
+Loading data to table q16_tmp
+7418637 Rows loaded to q16_tmp
+OK
+Time taken: 171.0 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121736_0005, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121736_0005
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121736_0005
+2016-04-12 17:40:16,026 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 17:40:25,067 Stage-1 map = 23%,  reduce = 0%
+2016-04-12 17:40:28,083 Stage-1 map = 44%,  reduce = 0%
+2016-04-12 17:40:31,099 Stage-1 map = 76%,  reduce = 0%
+2016-04-12 17:40:34,116 Stage-1 map = 80%,  reduce = 0%
+2016-04-12 17:40:40,152 Stage-1 map = 100%,  reduce = 0%
+2016-04-12 17:40:43,172 Stage-1 map = 100%,  reduce = 33%
+2016-04-12 17:40:46,192 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604121736_0005
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604121736_0006, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604121736_0006
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604121736_0006
+2016-04-12 17:40:54,580 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 17:40:57,596 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 17:41:00,614 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 17:41:06,647 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604121736_0006
+Loading data to table q16_parts_supplier_relationship
+27840 Rows loaded to q16_parts_supplier_relationship
+OK
+Time taken: 60.305 seconds

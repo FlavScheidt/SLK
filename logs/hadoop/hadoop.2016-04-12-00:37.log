@@ -1,0 +1,14 @@
+namenode running as process 4294. Stop it first.
+juno: datanode running as process 21131. Stop it first.
+pallas: datanode running as process 14884. Stop it first.
+belona: starting secondarynamenode, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-secondarynamenode-belona.out
+starting jobtracker, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-jobtracker-belona.out
+juno: starting tasktracker, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-tasktracker-juno.out
+pallas: starting tasktracker, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-tasktracker-pallas.out
+stopping jobtracker
+juno: stopping tasktracker
+pallas: stopping tasktracker
+stopping namenode
+juno: stopping datanode
+pallas: stopping datanode
+belona: stopping secondarynamenode

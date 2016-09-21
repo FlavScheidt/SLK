@@ -1,0 +1,72 @@
+########################################################################
+# STEP 1: Install and configure Hadoop
+########################################################################
+# All the tests has been made using Hadoop 0.20.2 with Java 7
+# Use newer versions by your own risk
+# Never forget to set the $HADOOP_HOME enviroment variable
+########################################################################
+
+########################################################################
+# STEP 2: Install and configure Hive
+########################################################################
+# All the tests has been made using Hive 0.6.0 
+# Use newer versions by your own risk
+# Never forget to set the $HIVE_HOME enviroment variable
+########################################################################
+
+########################################################################
+# STEP 3: Install and configure Likwid
+########################################################################
+# A modified release of Likwid 4 has been included on Salaak package 
+# Please, use this release or Salaak may not work
+########################################################################
+# 1 - Log as root
+# 2 - $ modprobe msr
+# 3 - Enter on the Likwid directory (you can move the directory, if
+#	necessary)
+# 4 - $ make
+# 5 - $ make install
+# 6 - Add this line to your .bashrc (change if necesary):
+#
+# export LD_LIBRARY_PATH=/usr/local/lib
+# export LIKWID_HOME="	/home/soft/likwid/"
+#	if test -d "$LIKWID_HOME"; then
+#		export PATH="$LIKWID_HOME/sbin:$LIKWID_HOME/bin/:$PATH"
+#	fi
+#
+# 7 - Type the following comands:
+#
+# $ setcap cap_sys_rawio+ep /usr/local/bin/likwid-perfctr
+# $ setcap cap_sys_rawio+ep /usr/local/bin/likwid-topology
+# $ setcap cap_sys_rawio+ep /usr/local/sbin/likwid-accessD
+# $ chmod 666 /dev/cpu/*/msr
+# $ chown root:root /usr/local/sbin/likwid-accessD
+# $ chmod 7155 /usr/local/sbin/likwid-accessD
+#
+# 8 - Type 'likwid-perfctr -a' and see if it works
+########################################################################
+
+########################################################################
+# STEP 4: Install and configure PostgreSQL
+########################################################################
+# 1 - Install postgreSQL
+# 2 - Create an user for salaak
+# 3 - Create a database for salaak
+# 4 - Grant all access to the database
+########################################################################
+
+########################################################################
+# STEP 5: Install and configure Apache server and PHP
+########################################################################
+
+########################################################################
+# STEP 6: Configuring and installing Salaak
+########################################################################
+# 1 - Go to the main directory of Salaak
+# 2 - Modify 'config' following the instructions given there
+# 3 - Insert the following line to your .bashrc (change if necessary):
+# 	export SALAAK_HOME="	/home/{username}/salaak/"
+#	if test -d "$SALAAK_HOME"; then
+#		export PATH="$SALAAK_HOME/sbin:$LIKWID_HOME/bin/:$PATH"
+#	fi	
+# 3 - $ sh install.sh

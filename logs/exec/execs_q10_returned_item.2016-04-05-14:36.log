@@ -1,0 +1,79 @@
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604051435_380629008.txt
+OK
+Time taken: 3.392 seconds
+OK
+Time taken: 0.065 seconds
+OK
+Time taken: 0.083 seconds
+OK
+Time taken: 0.067 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q10_returned_item. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 23 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604051435_1255132684.txt
+OK
+Time taken: 2.885 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.383 seconds
+OK
+Time taken: 0.031 seconds
+OK
+Time taken: 0.042 seconds
+OK
+Time taken: 0.033 seconds
+OK
+Time taken: 0.042 seconds
+Total MapReduce jobs = 6
+Launching Job 1 out of 6
+Number of reduce tasks not specified. Estimated from input data size: 2
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+java.io.FileNotFoundException: File does not exist: /home/hadoop/tmp/hive-hadoop/hive_2016-04-05_14-35-31_017_4741074539275679915/591084d3-799a-4dac-b757-b37f1d4345e3
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:457)
+	at org.apache.hadoop.filecache.DistributedCache.getTimestamp(DistributedCache.java:509)
+	at org.apache.hadoop.mapred.JobClient.configureCommandLineOptions(JobClient.java:640)
+	at org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:761)
+	at org.apache.hadoop.mapred.JobClient.submitJob(JobClient.java:730)
+	at org.apache.hadoop.hive.ql.exec.ExecDriver.execute(ExecDriver.java:688)
+	at org.apache.hadoop.hive.ql.exec.Task.executeTask(Task.java:107)
+	at org.apache.hadoop.hive.ql.exec.TaskRunner.runSequential(TaskRunner.java:55)
+	at org.apache.hadoop.hive.ql.Driver.launchTask(Driver.java:633)
+	at org.apache.hadoop.hive.ql.Driver.execute(Driver.java:506)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:384)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:138)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:197)
+	at org.apache.hadoop.hive.cli.CliDriver.processReader(CliDriver.java:216)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:272)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:156)
+Job Submission failed with exception 'java.io.FileNotFoundException(File does not exist: /home/hadoop/tmp/hive-hadoop/hive_2016-04-05_14-35-31_017_4741074539275679915/591084d3-799a-4dac-b757-b37f1d4345e3)'
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.ExecDriver

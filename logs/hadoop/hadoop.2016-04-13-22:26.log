@@ -1,0 +1,15 @@
+starting namenode, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-namenode-belona.out
+juno: starting datanode, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-datanode-juno.out
+pallas: starting datanode, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-datanode-pallas.out
+belona: starting secondarynamenode, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-secondarynamenode-belona.out
+starting jobtracker, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-jobtracker-belona.out
+juno: starting tasktracker, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-tasktracker-juno.out
+pallas: starting tasktracker, logging to /home/hadoop/hadoop/bin/../logs/hadoop-hadoop-tasktracker-pallas.out
+Safe mode is OFF
+stopping jobtracker
+pallas: stopping tasktracker
+juno: stopping tasktracker
+stopping namenode
+pallas: stopping datanode
+juno: stopping datanode
+belona: stopping secondarynamenode

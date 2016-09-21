@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS slk_exec_time (
+	ID				SERIAL			UNIQUE							NOT NULL,
+	ID_QUERY		INT 			REFERENCES slk_query(ID),
+	TIME_INIT		INT,
+	PRIMARY KEY(ID)
+); 

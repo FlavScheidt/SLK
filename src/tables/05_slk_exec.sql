@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS slk_exec (
+	ID				SERIAL			UNIQUE							NOT NULL,
+	ID_EXEC_TIME	INT 			REFERENCES slk_exec_time(ID),
+	ID_SERVICE		INT 			REFERENCES slk_service(ID),
+	ID_NODE			INT				REFERENCES slk_node(ID),
+	PRIMARY KEY(ID)
+); 
+ 

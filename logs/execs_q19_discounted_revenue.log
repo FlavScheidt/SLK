@@ -1,0 +1,1357 @@
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122054_1692777243.txt
+OK
+Time taken: 3.889 seconds
+OK
+Time taken: 0.081 seconds
+OK
+Time taken: 0.012 seconds
+OK
+Time taken: 0.283 seconds
+OK
+Time taken: 0.055 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot create directory /user/hive/warehouse/q19_discounted_revenue. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 23 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirsInternal(FSNamesystem.java:1761)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirs(FSNamesystem.java:1735)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.mkdirs(NameNode.java:542)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122054_2038324577.txt
+OK
+Time taken: 3.488 seconds
+OK
+Time taken: 0.097 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.281 seconds
+OK
+Time taken: 0.082 seconds
+OK
+Time taken: 0.042 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 8
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122054_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122054_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122054_0001
+2016-04-12 20:55:03,282 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 20:55:12,351 Stage-1 map = 1%,  reduce = 0%
+2016-04-12 20:55:15,374 Stage-1 map = 3%,  reduce = 0%
+2016-04-12 20:55:18,398 Stage-1 map = 5%,  reduce = 0%
+2016-04-12 20:55:21,421 Stage-1 map = 7%,  reduce = 0%
+2016-04-12 20:55:24,443 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 20:55:27,465 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 20:55:30,486 Stage-1 map = 13%,  reduce = 0%
+2016-04-12 20:55:42,601 Stage-1 map = 14%,  reduce = 1%
+2016-04-12 20:55:45,633 Stage-1 map = 14%,  reduce = 2%
+2016-04-12 20:55:48,666 Stage-1 map = 16%,  reduce = 2%
+2016-04-12 20:55:51,697 Stage-1 map = 17%,  reduce = 2%
+2016-04-12 20:55:54,729 Stage-1 map = 19%,  reduce = 2%
+2016-04-12 20:55:57,759 Stage-1 map = 21%,  reduce = 2%
+2016-04-12 20:55:59,786 Stage-1 map = 23%,  reduce = 2%
+2016-04-12 20:56:00,801 Stage-1 map = 24%,  reduce = 2%
+2016-04-12 20:56:02,825 Stage-1 map = 26%,  reduce = 2%
+2016-04-12 20:56:05,860 Stage-1 map = 27%,  reduce = 2%
+2016-04-12 20:56:17,975 Stage-1 map = 27%,  reduce = 4%
+2016-04-12 20:56:21,005 Stage-1 map = 29%,  reduce = 4%
+2016-04-12 20:56:24,035 Stage-1 map = 30%,  reduce = 4%
+2016-04-12 20:56:27,063 Stage-1 map = 32%,  reduce = 4%
+2016-04-12 20:56:30,090 Stage-1 map = 34%,  reduce = 4%
+2016-04-12 20:56:33,117 Stage-1 map = 36%,  reduce = 4%
+2016-04-12 20:56:36,144 Stage-1 map = 39%,  reduce = 4%
+2016-04-12 20:56:39,170 Stage-1 map = 40%,  reduce = 4%
+2016-04-12 20:56:51,266 Stage-1 map = 41%,  reduce = 5%
+2016-04-12 20:56:54,294 Stage-1 map = 41%,  reduce = 6%
+2016-04-12 20:56:57,320 Stage-1 map = 43%,  reduce = 6%
+2016-04-12 20:57:00,350 Stage-1 map = 44%,  reduce = 7%
+2016-04-12 20:57:03,377 Stage-1 map = 46%,  reduce = 7%
+2016-04-12 20:57:06,399 Stage-1 map = 48%,  reduce = 7%
+2016-04-12 20:57:09,421 Stage-1 map = 50%,  reduce = 7%
+2016-04-12 20:57:12,445 Stage-1 map = 52%,  reduce = 7%
+2016-04-12 20:57:15,467 Stage-1 map = 53%,  reduce = 7%
+2016-04-12 20:57:27,545 Stage-1 map = 54%,  reduce = 8%
+2016-04-12 20:57:30,568 Stage-1 map = 55%,  reduce = 9%
+2016-04-12 20:57:33,590 Stage-1 map = 57%,  reduce = 9%
+2016-04-12 20:57:36,610 Stage-1 map = 60%,  reduce = 9%
+2016-04-12 20:57:39,631 Stage-1 map = 62%,  reduce = 9%
+2016-04-12 20:57:42,651 Stage-1 map = 64%,  reduce = 9%
+2016-04-12 20:57:45,670 Stage-1 map = 66%,  reduce = 9%
+2016-04-12 20:57:48,689 Stage-1 map = 67%,  reduce = 9%
+2016-04-12 20:58:00,759 Stage-1 map = 67%,  reduce = 10%
+2016-04-12 20:58:06,794 Stage-1 map = 69%,  reduce = 11%
+2016-04-12 20:58:09,813 Stage-1 map = 70%,  reduce = 11%
+2016-04-12 20:58:12,832 Stage-1 map = 72%,  reduce = 11%
+2016-04-12 20:58:15,852 Stage-1 map = 74%,  reduce = 11%
+2016-04-12 20:58:18,871 Stage-1 map = 76%,  reduce = 11%
+2016-04-12 20:58:21,891 Stage-1 map = 79%,  reduce = 11%
+2016-04-12 20:58:24,909 Stage-1 map = 80%,  reduce = 11%
+2016-04-12 20:58:39,996 Stage-1 map = 80%,  reduce = 13%
+2016-04-12 20:58:43,015 Stage-1 map = 82%,  reduce = 13%
+2016-04-12 20:58:46,034 Stage-1 map = 83%,  reduce = 13%
+2016-04-12 20:58:49,053 Stage-1 map = 85%,  reduce = 13%
+2016-04-12 20:58:52,072 Stage-1 map = 87%,  reduce = 13%
+2016-04-12 20:58:55,092 Stage-1 map = 90%,  reduce = 13%
+2016-04-12 20:58:58,112 Stage-1 map = 92%,  reduce = 13%
+2016-04-12 20:59:01,132 Stage-1 map = 93%,  reduce = 13%
+2016-04-12 20:59:12,195 Stage-1 map = 94%,  reduce = 13%
+2016-04-12 20:59:13,204 Stage-1 map = 95%,  reduce = 14%
+2016-04-12 20:59:15,218 Stage-1 map = 95%,  reduce = 15%
+2016-04-12 20:59:18,237 Stage-1 map = 96%,  reduce = 16%
+2016-04-12 20:59:19,245 Stage-1 map = 97%,  reduce = 16%
+2016-04-12 20:59:22,265 Stage-1 map = 98%,  reduce = 16%
+2016-04-12 20:59:24,279 Stage-1 map = 99%,  reduce = 16%
+2016-04-12 20:59:30,315 Stage-1 map = 100%,  reduce = 16%
+2016-04-12 20:59:42,383 Stage-1 map = 100%,  reduce = 25%
+2016-04-12 20:59:45,400 Stage-1 map = 100%,  reduce = 29%
+2016-04-12 20:59:48,417 Stage-1 map = 100%,  reduce = 34%
+2016-04-12 20:59:51,436 Stage-1 map = 100%,  reduce = 35%
+2016-04-12 20:59:57,471 Stage-1 map = 100%,  reduce = 36%
+2016-04-12 21:00:00,491 Stage-1 map = 100%,  reduce = 37%
+2016-04-12 21:00:06,527 Stage-1 map = 100%,  reduce = 38%
+2016-04-12 21:00:12,561 Stage-1 map = 100%,  reduce = 39%
+2016-04-12 21:00:15,579 Stage-1 map = 100%,  reduce = 40%
+2016-04-12 21:00:21,613 Stage-1 map = 100%,  reduce = 41%
+2016-04-12 21:00:24,631 Stage-1 map = 100%,  reduce = 42%
+2016-04-12 21:00:30,665 Stage-1 map = 100%,  reduce = 43%
+2016-04-12 21:00:33,684 Stage-1 map = 100%,  reduce = 44%
+2016-04-12 21:00:39,718 Stage-1 map = 100%,  reduce = 45%
+2016-04-12 21:00:42,736 Stage-1 map = 100%,  reduce = 46%
+2016-04-12 21:00:48,770 Stage-1 map = 100%,  reduce = 47%
+2016-04-12 21:00:51,788 Stage-1 map = 100%,  reduce = 48%
+2016-04-12 21:00:57,822 Stage-1 map = 100%,  reduce = 49%
+2016-04-12 21:01:00,841 Stage-1 map = 100%,  reduce = 50%
+2016-04-12 21:01:12,920 Stage-1 map = 100%,  reduce = 51%
+2016-04-12 21:01:15,940 Stage-1 map = 100%,  reduce = 53%
+2016-04-12 21:01:18,960 Stage-1 map = 100%,  reduce = 54%
+2016-04-12 21:01:21,980 Stage-1 map = 100%,  reduce = 55%
+2016-04-12 21:01:25,000 Stage-1 map = 100%,  reduce = 57%
+2016-04-12 21:01:28,020 Stage-1 map = 100%,  reduce = 58%
+2016-04-12 21:01:31,040 Stage-1 map = 100%,  reduce = 59%
+2016-04-12 21:01:34,061 Stage-1 map = 100%,  reduce = 60%
+2016-04-12 21:01:37,081 Stage-1 map = 100%,  reduce = 61%
+2016-04-12 21:01:40,101 Stage-1 map = 100%,  reduce = 63%
+2016-04-12 21:01:43,123 Stage-1 map = 100%,  reduce = 64%
+2016-04-12 21:01:46,143 Stage-1 map = 100%,  reduce = 65%
+2016-04-12 21:01:49,163 Stage-1 map = 100%,  reduce = 66%
+2016-04-12 21:01:52,183 Stage-1 map = 100%,  reduce = 79%
+2016-04-12 21:01:55,203 Stage-1 map = 100%,  reduce = 84%
+2016-04-12 21:02:01,241 Stage-1 map = 100%,  reduce = 85%
+2016-04-12 21:02:07,277 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 21:02:10,297 Stage-1 map = 100%,  reduce = 87%
+2016-04-12 21:02:16,334 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 21:02:19,354 Stage-1 map = 100%,  reduce = 89%
+2016-04-12 21:02:25,391 Stage-1 map = 100%,  reduce = 90%
+2016-04-12 21:02:28,410 Stage-1 map = 100%,  reduce = 91%
+2016-04-12 21:02:34,446 Stage-1 map = 100%,  reduce = 92%
+2016-04-12 21:02:37,466 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 21:02:43,503 Stage-1 map = 100%,  reduce = 94%
+2016-04-12 21:02:49,539 Stage-1 map = 100%,  reduce = 95%
+2016-04-12 21:02:51,566 Stage-1 map = 100%,  reduce = 96%
+2016-04-12 21:02:57,602 Stage-1 map = 100%,  reduce = 97%
+2016-04-12 21:03:00,620 Stage-1 map = 100%,  reduce = 98%
+2016-04-12 21:03:06,655 Stage-1 map = 100%,  reduce = 99%
+2016-04-12 21:03:09,674 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604122054_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122054_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122054_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122054_0002
+2016-04-12 21:03:22,236 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 21:03:25,252 Stage-2 map = 25%,  reduce = 0%
+2016-04-12 21:03:28,272 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 21:03:31,290 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 21:03:34,309 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 21:03:37,330 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604122054_0002
+Loading data to table q19_discounted_revenue
+1 Rows loaded to q19_discounted_revenue
+OK
+Time taken: 522.571 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122104_1607638429.txt
+OK
+Time taken: 3.493 seconds
+OK
+Time taken: 0.064 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q19_discounted_revenue. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122104_716479265.txt
+OK
+Time taken: 2.855 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.432 seconds
+OK
+Time taken: 0.057 seconds
+OK
+Time taken: 0.024 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 8
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122104_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122104_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122104_0001
+2016-04-12 21:04:33,394 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 21:04:42,461 Stage-1 map = 1%,  reduce = 0%
+2016-04-12 21:04:45,483 Stage-1 map = 2%,  reduce = 0%
+2016-04-12 21:04:48,505 Stage-1 map = 4%,  reduce = 0%
+2016-04-12 21:04:51,525 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 21:04:54,545 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 21:04:57,574 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 21:05:00,604 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 21:05:03,636 Stage-1 map = 12%,  reduce = 0%
+2016-04-12 21:05:06,666 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 21:05:12,721 Stage-1 map = 15%,  reduce = 0%
+2016-04-12 21:05:14,743 Stage-1 map = 15%,  reduce = 1%
+2016-04-12 21:05:17,774 Stage-1 map = 16%,  reduce = 2%
+2016-04-12 21:05:20,804 Stage-1 map = 18%,  reduce = 2%
+2016-04-12 21:05:23,833 Stage-1 map = 20%,  reduce = 2%
+2016-04-12 21:05:26,863 Stage-1 map = 21%,  reduce = 2%
+2016-04-12 21:05:29,893 Stage-1 map = 22%,  reduce = 2%
+2016-04-12 21:05:32,925 Stage-1 map = 24%,  reduce = 2%
+2016-04-12 21:05:35,957 Stage-1 map = 25%,  reduce = 2%
+2016-04-12 21:05:38,989 Stage-1 map = 26%,  reduce = 2%
+2016-04-12 21:05:42,018 Stage-1 map = 28%,  reduce = 3%
+2016-04-12 21:05:48,072 Stage-1 map = 29%,  reduce = 3%
+2016-04-12 21:05:51,102 Stage-1 map = 30%,  reduce = 4%
+2016-04-12 21:05:54,131 Stage-1 map = 31%,  reduce = 4%
+2016-04-12 21:05:57,157 Stage-1 map = 32%,  reduce = 4%
+2016-04-12 21:06:00,182 Stage-1 map = 34%,  reduce = 4%
+2016-04-12 21:06:03,207 Stage-1 map = 36%,  reduce = 4%
+2016-04-12 21:06:06,233 Stage-1 map = 37%,  reduce = 4%
+2016-04-12 21:06:09,259 Stage-1 map = 38%,  reduce = 5%
+2016-04-12 21:06:12,286 Stage-1 map = 39%,  reduce = 5%
+2016-04-12 21:06:15,314 Stage-1 map = 40%,  reduce = 5%
+2016-04-12 21:06:18,339 Stage-1 map = 41%,  reduce = 5%
+2016-04-12 21:06:21,365 Stage-1 map = 42%,  reduce = 6%
+2016-04-12 21:06:24,390 Stage-1 map = 43%,  reduce = 6%
+2016-04-12 21:06:27,419 Stage-1 map = 44%,  reduce = 6%
+2016-04-12 21:06:30,442 Stage-1 map = 45%,  reduce = 6%
+2016-04-12 21:06:33,464 Stage-1 map = 47%,  reduce = 7%
+2016-04-12 21:06:36,486 Stage-1 map = 48%,  reduce = 7%
+2016-04-12 21:06:39,511 Stage-1 map = 49%,  reduce = 7%
+2016-04-12 21:06:42,532 Stage-1 map = 50%,  reduce = 7%
+2016-04-12 21:06:45,554 Stage-1 map = 51%,  reduce = 7%
+2016-04-12 21:06:48,575 Stage-1 map = 53%,  reduce = 8%
+2016-04-12 21:06:51,596 Stage-1 map = 55%,  reduce = 8%
+2016-04-12 21:06:57,634 Stage-1 map = 57%,  reduce = 8%
+2016-04-12 21:07:00,654 Stage-1 map = 58%,  reduce = 8%
+2016-04-12 21:07:03,674 Stage-1 map = 59%,  reduce = 9%
+2016-04-12 21:07:06,694 Stage-1 map = 61%,  reduce = 9%
+2016-04-12 21:07:09,714 Stage-1 map = 62%,  reduce = 9%
+2016-04-12 21:07:12,734 Stage-1 map = 63%,  reduce = 9%
+2016-04-12 21:07:15,754 Stage-1 map = 64%,  reduce = 9%
+2016-04-12 21:07:18,774 Stage-1 map = 65%,  reduce = 9%
+2016-04-12 21:07:21,793 Stage-1 map = 66%,  reduce = 10%
+2016-04-12 21:07:24,813 Stage-1 map = 67%,  reduce = 10%
+2016-04-12 21:07:27,833 Stage-1 map = 68%,  reduce = 10%
+2016-04-12 21:07:30,855 Stage-1 map = 69%,  reduce = 10%
+2016-04-12 21:07:33,874 Stage-1 map = 70%,  reduce = 10%
+2016-04-12 21:07:36,894 Stage-1 map = 72%,  reduce = 11%
+2016-04-12 21:07:39,914 Stage-1 map = 74%,  reduce = 11%
+2016-04-12 21:07:42,933 Stage-1 map = 76%,  reduce = 11%
+2016-04-12 21:07:48,970 Stage-1 map = 77%,  reduce = 11%
+2016-04-12 21:07:51,990 Stage-1 map = 79%,  reduce = 11%
+2016-04-12 21:07:55,010 Stage-1 map = 80%,  reduce = 11%
+2016-04-12 21:07:58,031 Stage-1 map = 81%,  reduce = 12%
+2016-04-12 21:08:01,052 Stage-1 map = 82%,  reduce = 12%
+2016-04-12 21:08:04,071 Stage-1 map = 83%,  reduce = 13%
+2016-04-12 21:08:07,091 Stage-1 map = 84%,  reduce = 13%
+2016-04-12 21:08:10,110 Stage-1 map = 85%,  reduce = 13%
+2016-04-12 21:08:12,125 Stage-1 map = 86%,  reduce = 13%
+2016-04-12 21:08:13,133 Stage-1 map = 87%,  reduce = 13%
+2016-04-12 21:08:16,152 Stage-1 map = 88%,  reduce = 13%
+2016-04-12 21:08:18,166 Stage-1 map = 89%,  reduce = 13%
+2016-04-12 21:08:21,186 Stage-1 map = 90%,  reduce = 13%
+2016-04-12 21:08:24,206 Stage-1 map = 91%,  reduce = 13%
+2016-04-12 21:08:27,225 Stage-1 map = 92%,  reduce = 13%
+2016-04-12 21:08:28,233 Stage-1 map = 93%,  reduce = 13%
+2016-04-12 21:08:30,248 Stage-1 map = 94%,  reduce = 14%
+2016-04-12 21:08:34,273 Stage-1 map = 95%,  reduce = 14%
+2016-04-12 21:08:36,287 Stage-1 map = 95%,  reduce = 15%
+2016-04-12 21:08:37,296 Stage-1 map = 96%,  reduce = 15%
+2016-04-12 21:08:40,315 Stage-1 map = 97%,  reduce = 15%
+2016-04-12 21:08:43,335 Stage-1 map = 98%,  reduce = 15%
+2016-04-12 21:08:46,353 Stage-1 map = 99%,  reduce = 16%
+2016-04-12 21:08:49,373 Stage-1 map = 100%,  reduce = 16%
+2016-04-12 21:09:03,451 Stage-1 map = 100%,  reduce = 20%
+2016-04-12 21:09:06,470 Stage-1 map = 100%,  reduce = 34%
+2016-04-12 21:09:12,504 Stage-1 map = 100%,  reduce = 35%
+2016-04-12 21:09:18,539 Stage-1 map = 100%,  reduce = 36%
+2016-04-12 21:09:21,558 Stage-1 map = 100%,  reduce = 37%
+2016-04-12 21:09:27,592 Stage-1 map = 100%,  reduce = 38%
+2016-04-12 21:09:30,610 Stage-1 map = 100%,  reduce = 39%
+2016-04-12 21:09:36,643 Stage-1 map = 100%,  reduce = 40%
+2016-04-12 21:09:39,660 Stage-1 map = 100%,  reduce = 41%
+2016-04-12 21:09:45,693 Stage-1 map = 100%,  reduce = 42%
+2016-04-12 21:09:48,711 Stage-1 map = 100%,  reduce = 43%
+2016-04-12 21:09:54,744 Stage-1 map = 100%,  reduce = 44%
+2016-04-12 21:09:57,762 Stage-1 map = 100%,  reduce = 45%
+2016-04-12 21:10:03,795 Stage-1 map = 100%,  reduce = 46%
+2016-04-12 21:10:06,813 Stage-1 map = 100%,  reduce = 47%
+2016-04-12 21:10:12,845 Stage-1 map = 100%,  reduce = 48%
+2016-04-12 21:10:15,863 Stage-1 map = 100%,  reduce = 49%
+2016-04-12 21:10:21,903 Stage-1 map = 100%,  reduce = 50%
+2016-04-12 21:10:30,958 Stage-1 map = 100%,  reduce = 51%
+2016-04-12 21:10:33,978 Stage-1 map = 100%,  reduce = 53%
+2016-04-12 21:10:37,005 Stage-1 map = 100%,  reduce = 54%
+2016-04-12 21:10:40,024 Stage-1 map = 100%,  reduce = 55%
+2016-04-12 21:10:43,044 Stage-1 map = 100%,  reduce = 56%
+2016-04-12 21:10:46,065 Stage-1 map = 100%,  reduce = 58%
+2016-04-12 21:10:49,086 Stage-1 map = 100%,  reduce = 59%
+2016-04-12 21:10:52,106 Stage-1 map = 100%,  reduce = 60%
+2016-04-12 21:10:55,126 Stage-1 map = 100%,  reduce = 61%
+2016-04-12 21:10:58,146 Stage-1 map = 100%,  reduce = 63%
+2016-04-12 21:11:01,166 Stage-1 map = 100%,  reduce = 64%
+2016-04-12 21:11:04,186 Stage-1 map = 100%,  reduce = 65%
+2016-04-12 21:11:07,206 Stage-1 map = 100%,  reduce = 66%
+2016-04-12 21:11:10,226 Stage-1 map = 100%,  reduce = 71%
+2016-04-12 21:11:13,246 Stage-1 map = 100%,  reduce = 83%
+2016-04-12 21:11:16,265 Stage-1 map = 100%,  reduce = 84%
+2016-04-12 21:11:22,302 Stage-1 map = 100%,  reduce = 85%
+2016-04-12 21:11:25,321 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 21:11:31,356 Stage-1 map = 100%,  reduce = 87%
+2016-04-12 21:11:37,391 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 21:11:40,410 Stage-1 map = 100%,  reduce = 89%
+2016-04-12 21:11:45,440 Stage-1 map = 100%,  reduce = 90%
+2016-04-12 21:11:49,465 Stage-1 map = 100%,  reduce = 91%
+2016-04-12 21:11:54,495 Stage-1 map = 100%,  reduce = 92%
+2016-04-12 21:11:58,519 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 21:12:03,548 Stage-1 map = 100%,  reduce = 94%
+2016-04-12 21:12:07,584 Stage-1 map = 100%,  reduce = 95%
+2016-04-12 21:12:13,617 Stage-1 map = 100%,  reduce = 96%
+2016-04-12 21:12:18,644 Stage-1 map = 100%,  reduce = 97%
+2016-04-12 21:12:22,698 Stage-1 map = 100%,  reduce = 98%
+2016-04-12 21:12:27,728 Stage-1 map = 100%,  reduce = 99%
+2016-04-12 21:12:31,753 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604122104_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122104_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122104_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122104_0002
+2016-04-12 21:12:43,425 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 21:12:46,442 Stage-2 map = 25%,  reduce = 0%
+2016-04-12 21:12:49,461 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 21:12:52,479 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 21:12:55,497 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 21:12:58,519 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604122104_0002
+Loading data to table q19_discounted_revenue
+1 Rows loaded to q19_discounted_revenue
+OK
+Time taken: 515.164 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122113_690230754.txt
+OK
+Time taken: 3.509 seconds
+OK
+Time taken: 0.065 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q19_discounted_revenue. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122113_866149268.txt
+OK
+Time taken: 2.915 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.419 seconds
+OK
+Time taken: 0.054 seconds
+OK
+Time taken: 0.032 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 8
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122113_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122113_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122113_0001
+2016-04-12 21:13:53,176 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 21:14:02,242 Stage-1 map = 1%,  reduce = 0%
+2016-04-12 21:14:05,263 Stage-1 map = 2%,  reduce = 0%
+2016-04-12 21:14:08,285 Stage-1 map = 4%,  reduce = 0%
+2016-04-12 21:14:11,306 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 21:14:14,327 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 21:14:17,348 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 21:14:20,368 Stage-1 map = 13%,  reduce = 0%
+2016-04-12 21:14:32,479 Stage-1 map = 14%,  reduce = 1%
+2016-04-12 21:14:35,509 Stage-1 map = 15%,  reduce = 1%
+2016-04-12 21:14:38,539 Stage-1 map = 16%,  reduce = 2%
+2016-04-12 21:14:41,569 Stage-1 map = 17%,  reduce = 2%
+2016-04-12 21:14:44,599 Stage-1 map = 19%,  reduce = 2%
+2016-04-12 21:14:47,629 Stage-1 map = 21%,  reduce = 2%
+2016-04-12 21:14:50,661 Stage-1 map = 23%,  reduce = 2%
+2016-04-12 21:14:53,693 Stage-1 map = 25%,  reduce = 2%
+2016-04-12 21:14:56,727 Stage-1 map = 26%,  reduce = 2%
+2016-04-12 21:14:59,761 Stage-1 map = 27%,  reduce = 2%
+2016-04-12 21:15:05,817 Stage-1 map = 27%,  reduce = 3%
+2016-04-12 21:15:08,845 Stage-1 map = 28%,  reduce = 3%
+2016-04-12 21:15:11,875 Stage-1 map = 29%,  reduce = 4%
+2016-04-12 21:15:13,897 Stage-1 map = 30%,  reduce = 4%
+2016-04-12 21:15:14,909 Stage-1 map = 31%,  reduce = 4%
+2016-04-12 21:15:16,928 Stage-1 map = 33%,  reduce = 4%
+2016-04-12 21:15:19,957 Stage-1 map = 35%,  reduce = 4%
+2016-04-12 21:15:22,983 Stage-1 map = 37%,  reduce = 4%
+2016-04-12 21:15:26,009 Stage-1 map = 39%,  reduce = 4%
+2016-04-12 21:15:29,036 Stage-1 map = 40%,  reduce = 4%
+2016-04-12 21:15:38,107 Stage-1 map = 40%,  reduce = 5%
+2016-04-12 21:15:41,132 Stage-1 map = 41%,  reduce = 6%
+2016-04-12 21:15:47,179 Stage-1 map = 42%,  reduce = 6%
+2016-04-12 21:15:50,206 Stage-1 map = 44%,  reduce = 7%
+2016-04-12 21:15:53,239 Stage-1 map = 46%,  reduce = 7%
+2016-04-12 21:15:56,261 Stage-1 map = 48%,  reduce = 7%
+2016-04-12 21:15:59,283 Stage-1 map = 50%,  reduce = 7%
+2016-04-12 21:16:02,306 Stage-1 map = 52%,  reduce = 7%
+2016-04-12 21:16:05,328 Stage-1 map = 53%,  reduce = 7%
+2016-04-12 21:16:14,387 Stage-1 map = 54%,  reduce = 8%
+2016-04-12 21:16:20,428 Stage-1 map = 56%,  reduce = 8%
+2016-04-12 21:16:23,448 Stage-1 map = 58%,  reduce = 9%
+2016-04-12 21:16:26,469 Stage-1 map = 60%,  reduce = 9%
+2016-04-12 21:16:29,489 Stage-1 map = 62%,  reduce = 9%
+2016-04-12 21:16:32,510 Stage-1 map = 64%,  reduce = 9%
+2016-04-12 21:16:35,530 Stage-1 map = 65%,  reduce = 9%
+2016-04-12 21:16:38,549 Stage-1 map = 66%,  reduce = 9%
+2016-04-12 21:16:41,569 Stage-1 map = 67%,  reduce = 9%
+2016-04-12 21:16:50,619 Stage-1 map = 68%,  reduce = 10%
+2016-04-12 21:16:53,639 Stage-1 map = 68%,  reduce = 11%
+2016-04-12 21:16:56,658 Stage-1 map = 70%,  reduce = 11%
+2016-04-12 21:16:59,677 Stage-1 map = 72%,  reduce = 11%
+2016-04-12 21:17:02,697 Stage-1 map = 74%,  reduce = 11%
+2016-04-12 21:17:05,716 Stage-1 map = 76%,  reduce = 11%
+2016-04-12 21:17:08,735 Stage-1 map = 78%,  reduce = 11%
+2016-04-12 21:17:11,755 Stage-1 map = 79%,  reduce = 11%
+2016-04-12 21:17:14,774 Stage-1 map = 80%,  reduce = 11%
+2016-04-12 21:17:20,810 Stage-1 map = 81%,  reduce = 12%
+2016-04-12 21:17:23,830 Stage-1 map = 81%,  reduce = 13%
+2016-04-12 21:17:26,849 Stage-1 map = 82%,  reduce = 13%
+2016-04-12 21:17:29,868 Stage-1 map = 84%,  reduce = 13%
+2016-04-12 21:17:32,888 Stage-1 map = 86%,  reduce = 13%
+2016-04-12 21:17:35,907 Stage-1 map = 88%,  reduce = 13%
+2016-04-12 21:17:38,927 Stage-1 map = 90%,  reduce = 13%
+2016-04-12 21:17:41,946 Stage-1 map = 92%,  reduce = 13%
+2016-04-12 21:17:44,965 Stage-1 map = 93%,  reduce = 13%
+2016-04-12 21:17:54,017 Stage-1 map = 93%,  reduce = 14%
+2016-04-12 21:17:57,037 Stage-1 map = 94%,  reduce = 15%
+2016-04-12 21:18:00,056 Stage-1 map = 95%,  reduce = 15%
+2016-04-12 21:18:03,075 Stage-1 map = 96%,  reduce = 16%
+2016-04-12 21:18:06,094 Stage-1 map = 97%,  reduce = 16%
+2016-04-12 21:18:09,113 Stage-1 map = 99%,  reduce = 16%
+2016-04-12 21:18:15,148 Stage-1 map = 100%,  reduce = 16%
+2016-04-12 21:18:23,193 Stage-1 map = 100%,  reduce = 21%
+2016-04-12 21:18:24,201 Stage-1 map = 100%,  reduce = 25%
+2016-04-12 21:18:27,220 Stage-1 map = 100%,  reduce = 29%
+2016-04-12 21:18:29,233 Stage-1 map = 100%,  reduce = 34%
+2016-04-12 21:18:32,252 Stage-1 map = 100%,  reduce = 35%
+2016-04-12 21:18:36,311 Stage-1 map = 100%,  reduce = 36%
+2016-04-12 21:18:41,340 Stage-1 map = 100%,  reduce = 37%
+2016-04-12 21:18:47,380 Stage-1 map = 100%,  reduce = 38%
+2016-04-12 21:18:50,399 Stage-1 map = 100%,  reduce = 39%
+2016-04-12 21:18:56,433 Stage-1 map = 100%,  reduce = 40%
+2016-04-12 21:18:59,452 Stage-1 map = 100%,  reduce = 41%
+2016-04-12 21:19:05,486 Stage-1 map = 100%,  reduce = 42%
+2016-04-12 21:19:08,505 Stage-1 map = 100%,  reduce = 43%
+2016-04-12 21:19:14,540 Stage-1 map = 100%,  reduce = 44%
+2016-04-12 21:19:17,558 Stage-1 map = 100%,  reduce = 45%
+2016-04-12 21:19:23,592 Stage-1 map = 100%,  reduce = 46%
+2016-04-12 21:19:26,611 Stage-1 map = 100%,  reduce = 47%
+2016-04-12 21:19:32,645 Stage-1 map = 100%,  reduce = 48%
+2016-04-12 21:19:38,679 Stage-1 map = 100%,  reduce = 49%
+2016-04-12 21:19:41,703 Stage-1 map = 100%,  reduce = 50%
+2016-04-12 21:19:50,758 Stage-1 map = 100%,  reduce = 52%
+2016-04-12 21:19:53,778 Stage-1 map = 100%,  reduce = 53%
+2016-04-12 21:19:56,799 Stage-1 map = 100%,  reduce = 54%
+2016-04-12 21:19:59,820 Stage-1 map = 100%,  reduce = 56%
+2016-04-12 21:20:02,840 Stage-1 map = 100%,  reduce = 57%
+2016-04-12 21:20:05,861 Stage-1 map = 100%,  reduce = 58%
+2016-04-12 21:20:08,881 Stage-1 map = 100%,  reduce = 59%
+2016-04-12 21:20:11,902 Stage-1 map = 100%,  reduce = 61%
+2016-04-12 21:20:14,922 Stage-1 map = 100%,  reduce = 62%
+2016-04-12 21:20:17,945 Stage-1 map = 100%,  reduce = 63%
+2016-04-12 21:20:20,964 Stage-1 map = 100%,  reduce = 65%
+2016-04-12 21:20:23,984 Stage-1 map = 100%,  reduce = 66%
+2016-04-12 21:20:30,020 Stage-1 map = 100%,  reduce = 79%
+2016-04-12 21:20:33,040 Stage-1 map = 100%,  reduce = 84%
+2016-04-12 21:20:39,076 Stage-1 map = 100%,  reduce = 85%
+2016-04-12 21:20:45,112 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 21:20:48,132 Stage-1 map = 100%,  reduce = 87%
+2016-04-12 21:20:54,168 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 21:20:57,187 Stage-1 map = 100%,  reduce = 89%
+2016-04-12 21:21:03,224 Stage-1 map = 100%,  reduce = 90%
+2016-04-12 21:21:06,243 Stage-1 map = 100%,  reduce = 91%
+2016-04-12 21:21:12,278 Stage-1 map = 100%,  reduce = 92%
+2016-04-12 21:21:15,297 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 21:21:21,334 Stage-1 map = 100%,  reduce = 94%
+2016-04-12 21:21:27,367 Stage-1 map = 100%,  reduce = 95%
+2016-04-12 21:21:30,386 Stage-1 map = 100%,  reduce = 96%
+2016-04-12 21:21:36,420 Stage-1 map = 100%,  reduce = 97%
+2016-04-12 21:21:39,439 Stage-1 map = 100%,  reduce = 98%
+2016-04-12 21:21:45,474 Stage-1 map = 100%,  reduce = 99%
+2016-04-12 21:21:48,493 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604122113_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122113_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122113_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122113_0002
+2016-04-12 21:21:57,084 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 21:22:00,100 Stage-2 map = 25%,  reduce = 0%
+2016-04-12 21:22:03,117 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 21:22:06,135 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 21:22:09,153 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 21:22:12,174 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604122113_0002
+Loading data to table q19_discounted_revenue
+1 Rows loaded to q19_discounted_revenue
+OK
+Time taken: 508.788 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122122_1194227985.txt
+OK
+Time taken: 3.424 seconds
+OK
+Time taken: 0.064 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q19_discounted_revenue. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122122_217164013.txt
+OK
+Time taken: 2.933 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.448 seconds
+OK
+Time taken: 0.056 seconds
+OK
+Time taken: 0.025 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 8
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122122_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122122_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122122_0001
+2016-04-12 21:23:06,725 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 21:23:15,790 Stage-1 map = 1%,  reduce = 0%
+2016-04-12 21:23:18,812 Stage-1 map = 2%,  reduce = 0%
+2016-04-12 21:23:21,838 Stage-1 map = 4%,  reduce = 0%
+2016-04-12 21:23:24,858 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 21:23:27,878 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 21:23:30,900 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 21:23:33,920 Stage-1 map = 13%,  reduce = 0%
+2016-04-12 21:23:46,032 Stage-1 map = 14%,  reduce = 1%
+2016-04-12 21:23:52,088 Stage-1 map = 16%,  reduce = 2%
+2016-04-12 21:23:55,119 Stage-1 map = 17%,  reduce = 2%
+2016-04-12 21:23:57,140 Stage-1 map = 18%,  reduce = 2%
+2016-04-12 21:23:58,154 Stage-1 map = 19%,  reduce = 2%
+2016-04-12 21:24:00,175 Stage-1 map = 21%,  reduce = 2%
+2016-04-12 21:24:03,208 Stage-1 map = 23%,  reduce = 2%
+2016-04-12 21:24:06,240 Stage-1 map = 25%,  reduce = 2%
+2016-04-12 21:24:09,274 Stage-1 map = 27%,  reduce = 2%
+2016-04-12 21:24:18,361 Stage-1 map = 27%,  reduce = 3%
+2016-04-12 21:24:21,391 Stage-1 map = 27%,  reduce = 4%
+2016-04-12 21:24:24,420 Stage-1 map = 29%,  reduce = 4%
+2016-04-12 21:24:27,449 Stage-1 map = 30%,  reduce = 4%
+2016-04-12 21:24:30,476 Stage-1 map = 32%,  reduce = 4%
+2016-04-12 21:24:33,504 Stage-1 map = 34%,  reduce = 4%
+2016-04-12 21:24:36,530 Stage-1 map = 36%,  reduce = 4%
+2016-04-12 21:24:39,556 Stage-1 map = 39%,  reduce = 4%
+2016-04-12 21:24:42,582 Stage-1 map = 40%,  reduce = 4%
+2016-04-12 21:24:54,678 Stage-1 map = 40%,  reduce = 5%
+2016-04-12 21:24:57,704 Stage-1 map = 41%,  reduce = 7%
+2016-04-12 21:25:00,730 Stage-1 map = 42%,  reduce = 7%
+2016-04-12 21:25:03,759 Stage-1 map = 44%,  reduce = 7%
+2016-04-12 21:25:06,783 Stage-1 map = 46%,  reduce = 7%
+2016-04-12 21:25:09,805 Stage-1 map = 48%,  reduce = 7%
+2016-04-12 21:25:12,827 Stage-1 map = 50%,  reduce = 7%
+2016-04-12 21:25:15,849 Stage-1 map = 52%,  reduce = 7%
+2016-04-12 21:25:18,871 Stage-1 map = 53%,  reduce = 7%
+2016-04-12 21:25:27,930 Stage-1 map = 54%,  reduce = 8%
+2016-04-12 21:25:30,952 Stage-1 map = 55%,  reduce = 8%
+2016-04-12 21:25:33,974 Stage-1 map = 57%,  reduce = 9%
+2016-04-12 21:25:36,994 Stage-1 map = 59%,  reduce = 9%
+2016-04-12 21:25:40,015 Stage-1 map = 61%,  reduce = 9%
+2016-04-12 21:25:43,034 Stage-1 map = 63%,  reduce = 9%
+2016-04-12 21:25:46,054 Stage-1 map = 65%,  reduce = 9%
+2016-04-12 21:25:49,072 Stage-1 map = 66%,  reduce = 9%
+2016-04-12 21:25:52,091 Stage-1 map = 67%,  reduce = 9%
+2016-04-12 21:26:01,142 Stage-1 map = 67%,  reduce = 10%
+2016-04-12 21:26:04,161 Stage-1 map = 67%,  reduce = 11%
+2016-04-12 21:26:07,180 Stage-1 map = 68%,  reduce = 11%
+2016-04-12 21:26:10,200 Stage-1 map = 69%,  reduce = 11%
+2016-04-12 21:26:13,219 Stage-1 map = 71%,  reduce = 11%
+2016-04-12 21:26:16,238 Stage-1 map = 73%,  reduce = 11%
+2016-04-12 21:26:19,257 Stage-1 map = 75%,  reduce = 11%
+2016-04-12 21:26:22,276 Stage-1 map = 77%,  reduce = 11%
+2016-04-12 21:26:25,295 Stage-1 map = 79%,  reduce = 11%
+2016-04-12 21:26:28,314 Stage-1 map = 80%,  reduce = 11%
+2016-04-12 21:26:37,366 Stage-1 map = 80%,  reduce = 12%
+2016-04-12 21:26:40,385 Stage-1 map = 81%,  reduce = 13%
+2016-04-12 21:26:43,405 Stage-1 map = 83%,  reduce = 13%
+2016-04-12 21:26:46,424 Stage-1 map = 85%,  reduce = 13%
+2016-04-12 21:26:49,444 Stage-1 map = 87%,  reduce = 13%
+2016-04-12 21:26:51,457 Stage-1 map = 88%,  reduce = 13%
+2016-04-12 21:26:52,465 Stage-1 map = 89%,  reduce = 13%
+2016-04-12 21:26:54,479 Stage-1 map = 90%,  reduce = 13%
+2016-04-12 21:26:55,487 Stage-1 map = 91%,  reduce = 13%
+2016-04-12 21:26:58,506 Stage-1 map = 92%,  reduce = 13%
+2016-04-12 21:27:01,526 Stage-1 map = 93%,  reduce = 13%
+2016-04-12 21:27:06,556 Stage-1 map = 93%,  reduce = 14%
+2016-04-12 21:27:09,575 Stage-1 map = 94%,  reduce = 14%
+2016-04-12 21:27:12,595 Stage-1 map = 95%,  reduce = 14%
+2016-04-12 21:27:15,614 Stage-1 map = 95%,  reduce = 15%
+2016-04-12 21:27:18,633 Stage-1 map = 96%,  reduce = 16%
+2016-04-12 21:27:21,658 Stage-1 map = 98%,  reduce = 16%
+2016-04-12 21:27:24,678 Stage-1 map = 99%,  reduce = 16%
+2016-04-12 21:27:27,699 Stage-1 map = 100%,  reduce = 16%
+2016-04-12 21:27:36,752 Stage-1 map = 100%,  reduce = 20%
+2016-04-12 21:27:39,771 Stage-1 map = 100%,  reduce = 25%
+2016-04-12 21:27:42,790 Stage-1 map = 100%,  reduce = 34%
+2016-04-12 21:27:48,824 Stage-1 map = 100%,  reduce = 35%
+2016-04-12 21:27:51,843 Stage-1 map = 100%,  reduce = 36%
+2016-04-12 21:27:57,878 Stage-1 map = 100%,  reduce = 37%
+2016-04-12 21:28:00,898 Stage-1 map = 100%,  reduce = 38%
+2016-04-12 21:28:06,934 Stage-1 map = 100%,  reduce = 39%
+2016-04-12 21:28:09,954 Stage-1 map = 100%,  reduce = 40%
+2016-04-12 21:28:15,990 Stage-1 map = 100%,  reduce = 41%
+2016-04-12 21:28:19,012 Stage-1 map = 100%,  reduce = 42%
+2016-04-12 21:28:25,046 Stage-1 map = 100%,  reduce = 43%
+2016-04-12 21:28:31,080 Stage-1 map = 100%,  reduce = 44%
+2016-04-12 21:28:34,099 Stage-1 map = 100%,  reduce = 45%
+2016-04-12 21:28:40,133 Stage-1 map = 100%,  reduce = 46%
+2016-04-12 21:28:43,151 Stage-1 map = 100%,  reduce = 47%
+2016-04-12 21:28:49,185 Stage-1 map = 100%,  reduce = 48%
+2016-04-12 21:28:52,203 Stage-1 map = 100%,  reduce = 49%
+2016-04-12 21:28:58,244 Stage-1 map = 100%,  reduce = 50%
+2016-04-12 21:29:04,282 Stage-1 map = 100%,  reduce = 51%
+2016-04-12 21:29:07,303 Stage-1 map = 100%,  reduce = 52%
+2016-04-12 21:29:10,324 Stage-1 map = 100%,  reduce = 53%
+2016-04-12 21:29:13,345 Stage-1 map = 100%,  reduce = 55%
+2016-04-12 21:29:19,383 Stage-1 map = 100%,  reduce = 57%
+2016-04-12 21:29:22,404 Stage-1 map = 100%,  reduce = 58%
+2016-04-12 21:29:25,425 Stage-1 map = 100%,  reduce = 59%
+2016-04-12 21:29:28,445 Stage-1 map = 100%,  reduce = 61%
+2016-04-12 21:29:31,467 Stage-1 map = 100%,  reduce = 62%
+2016-04-12 21:29:34,488 Stage-1 map = 100%,  reduce = 63%
+2016-04-12 21:29:37,508 Stage-1 map = 100%,  reduce = 64%
+2016-04-12 21:29:40,529 Stage-1 map = 100%,  reduce = 66%
+2016-04-12 21:29:43,549 Stage-1 map = 100%,  reduce = 74%
+2016-04-12 21:29:46,569 Stage-1 map = 100%,  reduce = 75%
+2016-04-12 21:29:49,589 Stage-1 map = 100%,  reduce = 79%
+2016-04-12 21:29:52,609 Stage-1 map = 100%,  reduce = 84%
+2016-04-12 21:29:55,630 Stage-1 map = 100%,  reduce = 85%
+2016-04-12 21:30:01,668 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 21:30:04,688 Stage-1 map = 100%,  reduce = 87%
+2016-04-12 21:30:10,725 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 21:30:15,757 Stage-1 map = 100%,  reduce = 89%
+2016-04-12 21:30:19,784 Stage-1 map = 100%,  reduce = 90%
+2016-04-12 21:30:24,814 Stage-1 map = 100%,  reduce = 91%
+2016-04-12 21:30:28,840 Stage-1 map = 100%,  reduce = 92%
+2016-04-12 21:30:33,870 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 21:30:37,894 Stage-1 map = 100%,  reduce = 94%
+2016-04-12 21:30:42,924 Stage-1 map = 100%,  reduce = 95%
+2016-04-12 21:30:46,948 Stage-1 map = 100%,  reduce = 96%
+2016-04-12 21:30:51,977 Stage-1 map = 100%,  reduce = 97%
+2016-04-12 21:30:56,016 Stage-1 map = 100%,  reduce = 98%
+2016-04-12 21:31:01,046 Stage-1 map = 100%,  reduce = 99%
+2016-04-12 21:31:07,082 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604122122_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122122_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122122_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122122_0002
+2016-04-12 21:31:19,699 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 21:31:22,716 Stage-2 map = 25%,  reduce = 0%
+2016-04-12 21:31:25,735 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 21:31:28,754 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 21:31:31,772 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 21:31:34,794 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604122122_0002
+Loading data to table q19_discounted_revenue
+1 Rows loaded to q19_discounted_revenue
+OK
+Time taken: 518.081 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122132_2050564194.txt
+OK
+Time taken: 3.587 seconds
+OK
+Time taken: 0.065 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q19_discounted_revenue. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122132_946297378.txt
+OK
+Time taken: 2.872 seconds
+OK
+Time taken: 0.008 seconds
+OK
+Time taken: 0.01 seconds
+OK
+Time taken: 0.413 seconds
+OK
+Time taken: 0.039 seconds
+OK
+Time taken: 0.025 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 8
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122132_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122132_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122132_0001
+2016-04-12 21:32:30,512 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 21:32:39,581 Stage-1 map = 1%,  reduce = 0%
+2016-04-12 21:32:42,603 Stage-1 map = 2%,  reduce = 0%
+2016-04-12 21:32:45,627 Stage-1 map = 4%,  reduce = 0%
+2016-04-12 21:32:48,649 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 21:32:51,670 Stage-1 map = 9%,  reduce = 0%
+2016-04-12 21:32:54,701 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 21:32:57,730 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 21:33:00,761 Stage-1 map = 13%,  reduce = 0%
+2016-04-12 21:33:03,792 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 21:33:09,847 Stage-1 map = 15%,  reduce = 0%
+2016-04-12 21:33:12,877 Stage-1 map = 16%,  reduce = 1%
+2016-04-12 21:33:15,908 Stage-1 map = 16%,  reduce = 2%
+2016-04-12 21:33:18,938 Stage-1 map = 18%,  reduce = 2%
+2016-04-12 21:33:21,968 Stage-1 map = 20%,  reduce = 2%
+2016-04-12 21:33:24,999 Stage-1 map = 21%,  reduce = 2%
+2016-04-12 21:33:28,031 Stage-1 map = 23%,  reduce = 2%
+2016-04-12 21:33:31,065 Stage-1 map = 24%,  reduce = 2%
+2016-04-12 21:33:34,096 Stage-1 map = 25%,  reduce = 2%
+2016-04-12 21:33:36,116 Stage-1 map = 26%,  reduce = 3%
+2016-04-12 21:33:37,130 Stage-1 map = 27%,  reduce = 3%
+2016-04-12 21:33:40,167 Stage-1 map = 28%,  reduce = 3%
+2016-04-12 21:33:45,211 Stage-1 map = 29%,  reduce = 3%
+2016-04-12 21:33:48,239 Stage-1 map = 30%,  reduce = 4%
+2016-04-12 21:33:51,268 Stage-1 map = 31%,  reduce = 4%
+2016-04-12 21:33:54,296 Stage-1 map = 33%,  reduce = 4%
+2016-04-12 21:33:57,322 Stage-1 map = 35%,  reduce = 4%
+2016-04-12 21:34:00,349 Stage-1 map = 36%,  reduce = 4%
+2016-04-12 21:34:03,375 Stage-1 map = 38%,  reduce = 4%
+2016-04-12 21:34:06,401 Stage-1 map = 39%,  reduce = 5%
+2016-04-12 21:34:09,428 Stage-1 map = 41%,  reduce = 5%
+2016-04-12 21:34:15,477 Stage-1 map = 42%,  reduce = 5%
+2016-04-12 21:34:18,502 Stage-1 map = 43%,  reduce = 6%
+2016-04-12 21:34:21,528 Stage-1 map = 44%,  reduce = 6%
+2016-04-12 21:34:27,576 Stage-1 map = 46%,  reduce = 7%
+2016-04-12 21:34:30,598 Stage-1 map = 47%,  reduce = 7%
+2016-04-12 21:34:33,621 Stage-1 map = 49%,  reduce = 7%
+2016-04-12 21:34:36,643 Stage-1 map = 50%,  reduce = 7%
+2016-04-12 21:34:39,666 Stage-1 map = 51%,  reduce = 7%
+2016-04-12 21:34:42,688 Stage-1 map = 53%,  reduce = 7%
+2016-04-12 21:34:45,711 Stage-1 map = 54%,  reduce = 7%
+2016-04-12 21:34:48,733 Stage-1 map = 55%,  reduce = 7%
+2016-04-12 21:34:51,753 Stage-1 map = 56%,  reduce = 8%
+2016-04-12 21:34:54,773 Stage-1 map = 57%,  reduce = 8%
+2016-04-12 21:34:57,794 Stage-1 map = 58%,  reduce = 8%
+2016-04-12 21:35:00,814 Stage-1 map = 60%,  reduce = 9%
+2016-04-12 21:35:03,834 Stage-1 map = 61%,  reduce = 9%
+2016-04-12 21:35:06,855 Stage-1 map = 63%,  reduce = 9%
+2016-04-12 21:35:09,875 Stage-1 map = 64%,  reduce = 9%
+2016-04-12 21:35:15,911 Stage-1 map = 66%,  reduce = 10%
+2016-04-12 21:35:18,939 Stage-1 map = 67%,  reduce = 10%
+2016-04-12 21:35:21,958 Stage-1 map = 68%,  reduce = 10%
+2016-04-12 21:35:24,978 Stage-1 map = 69%,  reduce = 10%
+2016-04-12 21:35:27,999 Stage-1 map = 70%,  reduce = 10%
+2016-04-12 21:35:31,019 Stage-1 map = 71%,  reduce = 10%
+2016-04-12 21:35:34,039 Stage-1 map = 73%,  reduce = 11%
+2016-04-12 21:35:37,059 Stage-1 map = 75%,  reduce = 11%
+2016-04-12 21:35:40,079 Stage-1 map = 76%,  reduce = 11%
+2016-04-12 21:35:43,099 Stage-1 map = 77%,  reduce = 11%
+2016-04-12 21:35:46,118 Stage-1 map = 78%,  reduce = 11%
+2016-04-12 21:35:49,137 Stage-1 map = 79%,  reduce = 12%
+2016-04-12 21:35:52,157 Stage-1 map = 81%,  reduce = 12%
+2016-04-12 21:35:55,176 Stage-1 map = 82%,  reduce = 12%
+2016-04-12 21:35:58,196 Stage-1 map = 83%,  reduce = 12%
+2016-04-12 21:36:01,216 Stage-1 map = 84%,  reduce = 12%
+2016-04-12 21:36:04,237 Stage-1 map = 85%,  reduce = 12%
+2016-04-12 21:36:07,256 Stage-1 map = 86%,  reduce = 12%
+2016-04-12 21:36:10,276 Stage-1 map = 87%,  reduce = 13%
+2016-04-12 21:36:13,297 Stage-1 map = 88%,  reduce = 13%
+2016-04-12 21:36:16,317 Stage-1 map = 89%,  reduce = 13%
+2016-04-12 21:36:19,337 Stage-1 map = 90%,  reduce = 14%
+2016-04-12 21:36:22,357 Stage-1 map = 91%,  reduce = 14%
+2016-04-12 21:36:25,376 Stage-1 map = 93%,  reduce = 14%
+2016-04-12 21:36:28,395 Stage-1 map = 94%,  reduce = 14%
+2016-04-12 21:36:31,419 Stage-1 map = 96%,  reduce = 14%
+2016-04-12 21:36:33,434 Stage-1 map = 97%,  reduce = 14%
+2016-04-12 21:36:36,454 Stage-1 map = 98%,  reduce = 14%
+2016-04-12 21:36:37,462 Stage-1 map = 98%,  reduce = 15%
+2016-04-12 21:36:39,476 Stage-1 map = 99%,  reduce = 15%
+2016-04-12 21:36:42,496 Stage-1 map = 100%,  reduce = 15%
+2016-04-12 21:36:45,516 Stage-1 map = 100%,  reduce = 16%
+2016-04-12 21:36:54,566 Stage-1 map = 100%,  reduce = 20%
+2016-04-12 21:36:57,585 Stage-1 map = 100%,  reduce = 24%
+2016-04-12 21:37:00,604 Stage-1 map = 100%,  reduce = 34%
+2016-04-12 21:37:06,639 Stage-1 map = 100%,  reduce = 35%
+2016-04-12 21:37:09,659 Stage-1 map = 100%,  reduce = 36%
+2016-04-12 21:37:15,693 Stage-1 map = 100%,  reduce = 37%
+2016-04-12 21:37:21,728 Stage-1 map = 100%,  reduce = 38%
+2016-04-12 21:37:24,747 Stage-1 map = 100%,  reduce = 39%
+2016-04-12 21:37:30,790 Stage-1 map = 100%,  reduce = 40%
+2016-04-12 21:37:33,811 Stage-1 map = 100%,  reduce = 41%
+2016-04-12 21:37:39,845 Stage-1 map = 100%,  reduce = 42%
+2016-04-12 21:37:42,865 Stage-1 map = 100%,  reduce = 43%
+2016-04-12 21:37:48,900 Stage-1 map = 100%,  reduce = 44%
+2016-04-12 21:37:51,918 Stage-1 map = 100%,  reduce = 45%
+2016-04-12 21:37:57,952 Stage-1 map = 100%,  reduce = 46%
+2016-04-12 21:38:03,987 Stage-1 map = 100%,  reduce = 47%
+2016-04-12 21:38:07,005 Stage-1 map = 100%,  reduce = 48%
+2016-04-12 21:38:13,043 Stage-1 map = 100%,  reduce = 49%
+2016-04-12 21:38:16,067 Stage-1 map = 100%,  reduce = 50%
+2016-04-12 21:38:25,123 Stage-1 map = 100%,  reduce = 51%
+2016-04-12 21:38:28,144 Stage-1 map = 100%,  reduce = 53%
+2016-04-12 21:38:31,165 Stage-1 map = 100%,  reduce = 54%
+2016-04-12 21:38:34,186 Stage-1 map = 100%,  reduce = 55%
+2016-04-12 21:38:37,206 Stage-1 map = 100%,  reduce = 56%
+2016-04-12 21:38:40,228 Stage-1 map = 100%,  reduce = 57%
+2016-04-12 21:38:43,248 Stage-1 map = 100%,  reduce = 59%
+2016-04-12 21:38:46,268 Stage-1 map = 100%,  reduce = 60%
+2016-04-12 21:38:49,288 Stage-1 map = 100%,  reduce = 61%
+2016-04-12 21:38:52,314 Stage-1 map = 100%,  reduce = 63%
+2016-04-12 21:38:58,349 Stage-1 map = 100%,  reduce = 65%
+2016-04-12 21:39:01,369 Stage-1 map = 100%,  reduce = 66%
+2016-04-12 21:39:04,389 Stage-1 map = 100%,  reduce = 71%
+2016-04-12 21:39:07,409 Stage-1 map = 100%,  reduce = 83%
+2016-04-12 21:39:10,429 Stage-1 map = 100%,  reduce = 84%
+2016-04-12 21:39:13,448 Stage-1 map = 100%,  reduce = 85%
+2016-04-12 21:39:19,485 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 21:39:22,504 Stage-1 map = 100%,  reduce = 87%
+2016-04-12 21:39:28,539 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 21:39:34,581 Stage-1 map = 100%,  reduce = 89%
+2016-04-12 21:39:37,600 Stage-1 map = 100%,  reduce = 90%
+2016-04-12 21:39:43,638 Stage-1 map = 100%,  reduce = 91%
+2016-04-12 21:39:46,658 Stage-1 map = 100%,  reduce = 92%
+2016-04-12 21:39:52,692 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 21:39:55,710 Stage-1 map = 100%,  reduce = 94%
+2016-04-12 21:40:01,759 Stage-1 map = 100%,  reduce = 95%
+2016-04-12 21:40:04,778 Stage-1 map = 100%,  reduce = 96%
+2016-04-12 21:40:09,808 Stage-1 map = 100%,  reduce = 97%
+2016-04-12 21:40:12,827 Stage-1 map = 100%,  reduce = 98%
+2016-04-12 21:40:18,862 Stage-1 map = 100%,  reduce = 99%
+2016-04-12 21:40:21,881 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604122132_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122132_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122132_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122132_0002
+2016-04-12 21:40:34,464 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 21:40:37,481 Stage-2 map = 25%,  reduce = 0%
+2016-04-12 21:40:40,498 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 21:40:43,516 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 21:40:46,534 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 21:40:49,556 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604122132_0002
+Loading data to table q19_discounted_revenue
+1 Rows loaded to q19_discounted_revenue
+OK
+Time taken: 508.739 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122141_1575550475.txt
+OK
+Time taken: 3.501 seconds
+OK
+Time taken: 0.064 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q19_discounted_revenue. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122141_619822851.txt
+OK
+Time taken: 2.848 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.444 seconds
+OK
+Time taken: 0.04 seconds
+OK
+Time taken: 0.024 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 8
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122141_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122141_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122141_0001
+2016-04-12 21:41:45,255 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 21:41:54,320 Stage-1 map = 1%,  reduce = 0%
+2016-04-12 21:41:57,342 Stage-1 map = 2%,  reduce = 0%
+2016-04-12 21:42:00,366 Stage-1 map = 4%,  reduce = 0%
+2016-04-12 21:42:03,387 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 21:42:06,407 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 21:42:09,442 Stage-1 map = 10%,  reduce = 0%
+2016-04-12 21:42:12,482 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 21:42:15,515 Stage-1 map = 13%,  reduce = 0%
+2016-04-12 21:42:18,544 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 21:42:23,592 Stage-1 map = 15%,  reduce = 0%
+2016-04-12 21:42:26,622 Stage-1 map = 15%,  reduce = 1%
+2016-04-12 21:42:29,653 Stage-1 map = 16%,  reduce = 2%
+2016-04-12 21:42:32,683 Stage-1 map = 17%,  reduce = 2%
+2016-04-12 21:42:35,712 Stage-1 map = 19%,  reduce = 2%
+2016-04-12 21:42:38,742 Stage-1 map = 21%,  reduce = 2%
+2016-04-12 21:42:41,773 Stage-1 map = 23%,  reduce = 2%
+2016-04-12 21:42:44,805 Stage-1 map = 24%,  reduce = 2%
+2016-04-12 21:42:47,836 Stage-1 map = 25%,  reduce = 3%
+2016-04-12 21:42:50,865 Stage-1 map = 27%,  reduce = 3%
+2016-04-12 21:42:53,894 Stage-1 map = 28%,  reduce = 3%
+2016-04-12 21:42:59,946 Stage-1 map = 29%,  reduce = 3%
+2016-04-12 21:43:02,978 Stage-1 map = 29%,  reduce = 4%
+2016-04-12 21:43:06,006 Stage-1 map = 30%,  reduce = 4%
+2016-04-12 21:43:09,033 Stage-1 map = 32%,  reduce = 4%
+2016-04-12 21:43:12,058 Stage-1 map = 34%,  reduce = 4%
+2016-04-12 21:43:15,084 Stage-1 map = 35%,  reduce = 4%
+2016-04-12 21:43:18,110 Stage-1 map = 37%,  reduce = 4%
+2016-04-12 21:43:21,136 Stage-1 map = 38%,  reduce = 5%
+2016-04-12 21:43:24,162 Stage-1 map = 40%,  reduce = 5%
+2016-04-12 21:43:27,189 Stage-1 map = 41%,  reduce = 5%
+2016-04-12 21:43:30,214 Stage-1 map = 42%,  reduce = 5%
+2016-04-12 21:43:33,241 Stage-1 map = 43%,  reduce = 6%
+2016-04-12 21:43:36,265 Stage-1 map = 44%,  reduce = 6%
+2016-04-12 21:43:42,314 Stage-1 map = 46%,  reduce = 7%
+2016-04-12 21:43:45,337 Stage-1 map = 47%,  reduce = 7%
+2016-04-12 21:43:48,359 Stage-1 map = 48%,  reduce = 7%
+2016-04-12 21:43:51,381 Stage-1 map = 50%,  reduce = 7%
+2016-04-12 21:43:54,402 Stage-1 map = 51%,  reduce = 7%
+2016-04-12 21:43:57,424 Stage-1 map = 52%,  reduce = 7%
+2016-04-12 21:44:00,446 Stage-1 map = 54%,  reduce = 8%
+2016-04-12 21:44:03,468 Stage-1 map = 55%,  reduce = 8%
+2016-04-12 21:44:06,488 Stage-1 map = 56%,  reduce = 8%
+2016-04-12 21:44:09,508 Stage-1 map = 57%,  reduce = 8%
+2016-04-12 21:44:12,529 Stage-1 map = 58%,  reduce = 8%
+2016-04-12 21:44:15,548 Stage-1 map = 60%,  reduce = 9%
+2016-04-12 21:44:18,567 Stage-1 map = 61%,  reduce = 9%
+2016-04-12 21:44:21,586 Stage-1 map = 63%,  reduce = 9%
+2016-04-12 21:44:24,606 Stage-1 map = 64%,  reduce = 9%
+2016-04-12 21:44:30,642 Stage-1 map = 66%,  reduce = 10%
+2016-04-12 21:44:33,662 Stage-1 map = 67%,  reduce = 10%
+2016-04-12 21:44:36,681 Stage-1 map = 68%,  reduce = 10%
+2016-04-12 21:44:39,700 Stage-1 map = 69%,  reduce = 10%
+2016-04-12 21:44:42,719 Stage-1 map = 70%,  reduce = 10%
+2016-04-12 21:44:45,738 Stage-1 map = 71%,  reduce = 10%
+2016-04-12 21:44:48,756 Stage-1 map = 73%,  reduce = 10%
+2016-04-12 21:44:51,774 Stage-1 map = 75%,  reduce = 11%
+2016-04-12 21:44:54,793 Stage-1 map = 76%,  reduce = 11%
+2016-04-12 21:44:57,812 Stage-1 map = 77%,  reduce = 11%
+2016-04-12 21:45:00,831 Stage-1 map = 78%,  reduce = 11%
+2016-04-12 21:45:03,851 Stage-1 map = 79%,  reduce = 11%
+2016-04-12 21:45:06,870 Stage-1 map = 81%,  reduce = 12%
+2016-04-12 21:45:09,889 Stage-1 map = 82%,  reduce = 12%
+2016-04-12 21:45:12,908 Stage-1 map = 83%,  reduce = 12%
+2016-04-12 21:45:15,928 Stage-1 map = 84%,  reduce = 13%
+2016-04-12 21:45:18,948 Stage-1 map = 85%,  reduce = 13%
+2016-04-12 21:45:21,967 Stage-1 map = 86%,  reduce = 13%
+2016-04-12 21:45:23,981 Stage-1 map = 87%,  reduce = 13%
+2016-04-12 21:45:24,990 Stage-1 map = 88%,  reduce = 13%
+2016-04-12 21:45:28,010 Stage-1 map = 89%,  reduce = 13%
+2016-04-12 21:45:31,030 Stage-1 map = 90%,  reduce = 13%
+2016-04-12 21:45:33,044 Stage-1 map = 91%,  reduce = 14%
+2016-04-12 21:45:36,063 Stage-1 map = 93%,  reduce = 14%
+2016-04-12 21:45:39,083 Stage-1 map = 94%,  reduce = 14%
+2016-04-12 21:45:42,101 Stage-1 map = 96%,  reduce = 14%
+2016-04-12 21:45:45,120 Stage-1 map = 97%,  reduce = 14%
+2016-04-12 21:45:48,139 Stage-1 map = 98%,  reduce = 14%
+2016-04-12 21:45:51,159 Stage-1 map = 99%,  reduce = 15%
+2016-04-12 21:45:57,194 Stage-1 map = 100%,  reduce = 16%
+2016-04-12 21:46:09,261 Stage-1 map = 100%,  reduce = 25%
+2016-04-12 21:46:12,281 Stage-1 map = 100%,  reduce = 34%
+2016-04-12 21:46:18,316 Stage-1 map = 100%,  reduce = 35%
+2016-04-12 21:46:24,351 Stage-1 map = 100%,  reduce = 36%
+2016-04-12 21:46:27,370 Stage-1 map = 100%,  reduce = 37%
+2016-04-12 21:46:33,406 Stage-1 map = 100%,  reduce = 38%
+2016-04-12 21:46:36,426 Stage-1 map = 100%,  reduce = 39%
+2016-04-12 21:46:42,459 Stage-1 map = 100%,  reduce = 40%
+2016-04-12 21:46:45,485 Stage-1 map = 100%,  reduce = 41%
+2016-04-12 21:46:51,518 Stage-1 map = 100%,  reduce = 42%
+2016-04-12 21:46:54,537 Stage-1 map = 100%,  reduce = 43%
+2016-04-12 21:47:00,571 Stage-1 map = 100%,  reduce = 44%
+2016-04-12 21:47:03,590 Stage-1 map = 100%,  reduce = 45%
+2016-04-12 21:47:09,624 Stage-1 map = 100%,  reduce = 46%
+2016-04-12 21:47:12,642 Stage-1 map = 100%,  reduce = 47%
+2016-04-12 21:47:18,674 Stage-1 map = 100%,  reduce = 48%
+2016-04-12 21:47:21,691 Stage-1 map = 100%,  reduce = 49%
+2016-04-12 21:47:27,729 Stage-1 map = 100%,  reduce = 50%
+2016-04-12 21:47:36,784 Stage-1 map = 100%,  reduce = 51%
+2016-04-12 21:47:39,804 Stage-1 map = 100%,  reduce = 53%
+2016-04-12 21:47:42,824 Stage-1 map = 100%,  reduce = 54%
+2016-04-12 21:47:45,845 Stage-1 map = 100%,  reduce = 55%
+2016-04-12 21:47:48,865 Stage-1 map = 100%,  reduce = 57%
+2016-04-12 21:47:51,885 Stage-1 map = 100%,  reduce = 58%
+2016-04-12 21:47:57,924 Stage-1 map = 100%,  reduce = 60%
+2016-04-12 21:48:00,944 Stage-1 map = 100%,  reduce = 61%
+2016-04-12 21:48:03,964 Stage-1 map = 100%,  reduce = 63%
+2016-04-12 21:48:06,984 Stage-1 map = 100%,  reduce = 64%
+2016-04-12 21:48:10,003 Stage-1 map = 100%,  reduce = 65%
+2016-04-12 21:48:13,023 Stage-1 map = 100%,  reduce = 66%
+2016-04-12 21:48:16,043 Stage-1 map = 100%,  reduce = 75%
+2016-04-12 21:48:19,063 Stage-1 map = 100%,  reduce = 84%
+2016-04-12 21:48:25,102 Stage-1 map = 100%,  reduce = 85%
+2016-04-12 21:48:31,138 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 21:48:34,157 Stage-1 map = 100%,  reduce = 87%
+2016-04-12 21:48:40,192 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 21:48:43,211 Stage-1 map = 100%,  reduce = 89%
+2016-04-12 21:48:48,248 Stage-1 map = 100%,  reduce = 90%
+2016-04-12 21:48:54,284 Stage-1 map = 100%,  reduce = 91%
+2016-04-12 21:48:57,303 Stage-1 map = 100%,  reduce = 92%
+2016-04-12 21:49:03,339 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 21:49:06,359 Stage-1 map = 100%,  reduce = 94%
+2016-04-12 21:49:12,394 Stage-1 map = 100%,  reduce = 95%
+2016-04-12 21:49:15,412 Stage-1 map = 100%,  reduce = 96%
+2016-04-12 21:49:21,462 Stage-1 map = 100%,  reduce = 97%
+2016-04-12 21:49:24,480 Stage-1 map = 100%,  reduce = 98%
+2016-04-12 21:49:30,514 Stage-1 map = 100%,  reduce = 99%
+2016-04-12 21:49:33,532 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604122141_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122141_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122141_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122141_0002
+2016-04-12 21:49:46,112 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 21:49:52,141 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 21:49:55,159 Stage-2 map = 75%,  reduce = 0%
+2016-04-12 21:49:58,177 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 21:50:01,196 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 21:50:04,217 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604122141_0002
+Loading data to table q19_discounted_revenue
+1 Rows loaded to q19_discounted_revenue
+OK
+Time taken: 509.063 seconds
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122150_1197464137.txt
+OK
+Time taken: 3.517 seconds
+OK
+Time taken: 0.064 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /user/hive/warehouse/q19_discounted_revenue. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1700)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1680)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:517)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604122150_895923891.txt
+OK
+Time taken: 2.891 seconds
+OK
+Time taken: 0.01 seconds
+OK
+Time taken: 0.01 seconds
+OK
+Time taken: 0.43 seconds
+OK
+Time taken: 0.046 seconds
+OK
+Time taken: 0.025 seconds
+Total MapReduce jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 8
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122150_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122150_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122150_0001
+2016-04-12 21:50:59,000 Stage-1 map = 0%,  reduce = 0%
+2016-04-12 21:51:08,067 Stage-1 map = 1%,  reduce = 0%
+2016-04-12 21:51:11,090 Stage-1 map = 2%,  reduce = 0%
+2016-04-12 21:51:13,106 Stage-1 map = 4%,  reduce = 0%
+2016-04-12 21:51:16,128 Stage-1 map = 6%,  reduce = 0%
+2016-04-12 21:51:19,150 Stage-1 map = 8%,  reduce = 0%
+2016-04-12 21:51:22,171 Stage-1 map = 11%,  reduce = 0%
+2016-04-12 21:51:25,192 Stage-1 map = 13%,  reduce = 0%
+2016-04-12 21:51:37,309 Stage-1 map = 14%,  reduce = 0%
+2016-04-12 21:51:40,340 Stage-1 map = 15%,  reduce = 0%
+2016-04-12 21:51:43,370 Stage-1 map = 16%,  reduce = 2%
+2016-04-12 21:51:46,402 Stage-1 map = 17%,  reduce = 2%
+2016-04-12 21:51:49,432 Stage-1 map = 19%,  reduce = 2%
+2016-04-12 21:51:52,461 Stage-1 map = 21%,  reduce = 2%
+2016-04-12 21:51:55,492 Stage-1 map = 23%,  reduce = 2%
+2016-04-12 21:51:58,524 Stage-1 map = 25%,  reduce = 2%
+2016-04-12 21:52:01,559 Stage-1 map = 27%,  reduce = 2%
+2016-04-12 21:52:13,669 Stage-1 map = 27%,  reduce = 4%
+2016-04-12 21:52:16,697 Stage-1 map = 28%,  reduce = 4%
+2016-04-12 21:52:19,726 Stage-1 map = 30%,  reduce = 4%
+2016-04-12 21:52:22,752 Stage-1 map = 32%,  reduce = 4%
+2016-04-12 21:52:25,779 Stage-1 map = 34%,  reduce = 4%
+2016-04-12 21:52:28,807 Stage-1 map = 36%,  reduce = 4%
+2016-04-12 21:52:31,832 Stage-1 map = 38%,  reduce = 4%
+2016-04-12 21:52:34,859 Stage-1 map = 39%,  reduce = 4%
+2016-04-12 21:52:37,885 Stage-1 map = 40%,  reduce = 4%
+2016-04-12 21:52:43,935 Stage-1 map = 41%,  reduce = 5%
+2016-04-12 21:52:46,962 Stage-1 map = 41%,  reduce = 6%
+2016-04-12 21:52:49,989 Stage-1 map = 42%,  reduce = 6%
+2016-04-12 21:52:53,015 Stage-1 map = 43%,  reduce = 7%
+2016-04-12 21:52:56,042 Stage-1 map = 45%,  reduce = 7%
+2016-04-12 21:52:59,070 Stage-1 map = 47%,  reduce = 7%
+2016-04-12 21:53:02,092 Stage-1 map = 49%,  reduce = 7%
+2016-04-12 21:53:05,114 Stage-1 map = 51%,  reduce = 7%
+2016-04-12 21:53:08,136 Stage-1 map = 52%,  reduce = 7%
+2016-04-12 21:53:11,158 Stage-1 map = 53%,  reduce = 7%
+2016-04-12 21:53:20,217 Stage-1 map = 54%,  reduce = 8%
+2016-04-12 21:53:23,238 Stage-1 map = 55%,  reduce = 8%
+2016-04-12 21:53:26,260 Stage-1 map = 57%,  reduce = 9%
+2016-04-12 21:53:29,281 Stage-1 map = 59%,  reduce = 9%
+2016-04-12 21:53:32,302 Stage-1 map = 61%,  reduce = 9%
+2016-04-12 21:53:35,323 Stage-1 map = 63%,  reduce = 9%
+2016-04-12 21:53:38,343 Stage-1 map = 65%,  reduce = 9%
+2016-04-12 21:53:41,362 Stage-1 map = 66%,  reduce = 9%
+2016-04-12 21:53:44,381 Stage-1 map = 67%,  reduce = 9%
+2016-04-12 21:53:50,419 Stage-1 map = 67%,  reduce = 10%
+2016-04-12 21:53:56,455 Stage-1 map = 68%,  reduce = 11%
+2016-04-12 21:53:59,475 Stage-1 map = 69%,  reduce = 11%
+2016-04-12 21:54:01,489 Stage-1 map = 70%,  reduce = 11%
+2016-04-12 21:54:04,508 Stage-1 map = 72%,  reduce = 11%
+2016-04-12 21:54:05,516 Stage-1 map = 73%,  reduce = 11%
+2016-04-12 21:54:07,530 Stage-1 map = 74%,  reduce = 11%
+2016-04-12 21:54:08,539 Stage-1 map = 75%,  reduce = 11%
+2016-04-12 21:54:10,553 Stage-1 map = 77%,  reduce = 11%
+2016-04-12 21:54:13,572 Stage-1 map = 79%,  reduce = 11%
+2016-04-12 21:54:16,591 Stage-1 map = 80%,  reduce = 11%
+2016-04-12 21:54:25,643 Stage-1 map = 80%,  reduce = 12%
+2016-04-12 21:54:28,662 Stage-1 map = 80%,  reduce = 13%
+2016-04-12 21:54:31,681 Stage-1 map = 82%,  reduce = 13%
+2016-04-12 21:54:34,700 Stage-1 map = 84%,  reduce = 13%
+2016-04-12 21:54:37,719 Stage-1 map = 86%,  reduce = 13%
+2016-04-12 21:54:40,738 Stage-1 map = 88%,  reduce = 13%
+2016-04-12 21:54:43,757 Stage-1 map = 90%,  reduce = 13%
+2016-04-12 21:54:46,777 Stage-1 map = 92%,  reduce = 13%
+2016-04-12 21:54:49,796 Stage-1 map = 93%,  reduce = 13%
+2016-04-12 21:54:58,849 Stage-1 map = 93%,  reduce = 14%
+2016-04-12 21:55:01,868 Stage-1 map = 94%,  reduce = 14%
+2016-04-12 21:55:04,888 Stage-1 map = 95%,  reduce = 16%
+2016-04-12 21:55:07,908 Stage-1 map = 97%,  reduce = 16%
+2016-04-12 21:55:10,927 Stage-1 map = 98%,  reduce = 16%
+2016-04-12 21:55:16,968 Stage-1 map = 99%,  reduce = 16%
+2016-04-12 21:55:19,988 Stage-1 map = 100%,  reduce = 16%
+2016-04-12 21:55:32,057 Stage-1 map = 100%,  reduce = 20%
+2016-04-12 21:55:35,076 Stage-1 map = 100%,  reduce = 34%
+2016-04-12 21:55:41,111 Stage-1 map = 100%,  reduce = 35%
+2016-04-12 21:55:47,143 Stage-1 map = 100%,  reduce = 36%
+2016-04-12 21:55:50,161 Stage-1 map = 100%,  reduce = 37%
+2016-04-12 21:55:56,196 Stage-1 map = 100%,  reduce = 38%
+2016-04-12 21:55:59,215 Stage-1 map = 100%,  reduce = 39%
+2016-04-12 21:56:05,248 Stage-1 map = 100%,  reduce = 40%
+2016-04-12 21:56:08,267 Stage-1 map = 100%,  reduce = 41%
+2016-04-12 21:56:14,300 Stage-1 map = 100%,  reduce = 42%
+2016-04-12 21:56:20,333 Stage-1 map = 100%,  reduce = 43%
+2016-04-12 21:56:23,351 Stage-1 map = 100%,  reduce = 44%
+2016-04-12 21:56:26,370 Stage-1 map = 100%,  reduce = 45%
+2016-04-12 21:56:32,405 Stage-1 map = 100%,  reduce = 46%
+2016-04-12 21:56:35,424 Stage-1 map = 100%,  reduce = 47%
+2016-04-12 21:56:41,457 Stage-1 map = 100%,  reduce = 48%
+2016-04-12 21:56:47,489 Stage-1 map = 100%,  reduce = 49%
+2016-04-12 21:56:50,513 Stage-1 map = 100%,  reduce = 50%
+2016-04-12 21:56:59,566 Stage-1 map = 100%,  reduce = 52%
+2016-04-12 21:57:02,586 Stage-1 map = 100%,  reduce = 53%
+2016-04-12 21:57:05,606 Stage-1 map = 100%,  reduce = 54%
+2016-04-12 21:57:08,625 Stage-1 map = 100%,  reduce = 56%
+2016-04-12 21:57:11,645 Stage-1 map = 100%,  reduce = 57%
+2016-04-12 21:57:14,664 Stage-1 map = 100%,  reduce = 58%
+2016-04-12 21:57:17,683 Stage-1 map = 100%,  reduce = 59%
+2016-04-12 21:57:20,702 Stage-1 map = 100%,  reduce = 60%
+2016-04-12 21:57:23,722 Stage-1 map = 100%,  reduce = 62%
+2016-04-12 21:57:26,742 Stage-1 map = 100%,  reduce = 63%
+2016-04-12 21:57:29,762 Stage-1 map = 100%,  reduce = 65%
+2016-04-12 21:57:35,799 Stage-1 map = 100%,  reduce = 66%
+2016-04-12 21:57:37,814 Stage-1 map = 100%,  reduce = 71%
+2016-04-12 21:57:40,833 Stage-1 map = 100%,  reduce = 75%
+2016-04-12 21:57:41,842 Stage-1 map = 100%,  reduce = 83%
+2016-04-12 21:57:43,857 Stage-1 map = 100%,  reduce = 84%
+2016-04-12 21:57:46,877 Stage-1 map = 100%,  reduce = 85%
+2016-04-12 21:57:52,914 Stage-1 map = 100%,  reduce = 86%
+2016-04-12 21:57:58,951 Stage-1 map = 100%,  reduce = 87%
+2016-04-12 21:58:01,970 Stage-1 map = 100%,  reduce = 88%
+2016-04-12 21:58:08,006 Stage-1 map = 100%,  reduce = 89%
+2016-04-12 21:58:11,026 Stage-1 map = 100%,  reduce = 90%
+2016-04-12 21:58:17,061 Stage-1 map = 100%,  reduce = 91%
+2016-04-12 21:58:20,081 Stage-1 map = 100%,  reduce = 92%
+2016-04-12 21:58:26,117 Stage-1 map = 100%,  reduce = 93%
+2016-04-12 21:58:29,137 Stage-1 map = 100%,  reduce = 94%
+2016-04-12 21:58:35,173 Stage-1 map = 100%,  reduce = 95%
+2016-04-12 21:58:41,212 Stage-1 map = 100%,  reduce = 96%
+2016-04-12 21:58:44,232 Stage-1 map = 100%,  reduce = 97%
+2016-04-12 21:58:50,267 Stage-1 map = 100%,  reduce = 98%
+2016-04-12 21:58:53,286 Stage-1 map = 100%,  reduce = 99%
+2016-04-12 21:58:59,322 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604122150_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604122150_0002, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604122150_0002
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604122150_0002
+2016-04-12 21:59:07,949 Stage-2 map = 0%,  reduce = 0%
+2016-04-12 21:59:10,966 Stage-2 map = 25%,  reduce = 0%
+2016-04-12 21:59:14,990 Stage-2 map = 50%,  reduce = 0%
+2016-04-12 21:59:17,004 Stage-2 map = 100%,  reduce = 0%
+2016-04-12 21:59:20,022 Stage-2 map = 100%,  reduce = 33%
+2016-04-12 21:59:23,043 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_201604122150_0002
+Loading data to table q19_discounted_revenue
+1 Rows loaded to q19_discounted_revenue
+OK
+Time taken: 514.115 seconds

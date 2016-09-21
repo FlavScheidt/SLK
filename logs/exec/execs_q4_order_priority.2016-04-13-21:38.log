@@ -1,0 +1,161 @@
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604132120_693702352.txt
+OK
+Time taken: 3.527 seconds
+OK
+Time taken: 0.073 seconds
+OK
+Time taken: 0.009 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.244 seconds
+OK
+Time taken: 0.058 seconds
+FAILED: Error in metadata: MetaException(message:Got exception: org.apache.hadoop.ipc.RemoteException org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot create directory /user/hive/warehouse/q4_order_priority_tmp. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 24 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirsInternal(FSNamesystem.java:1761)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirs(FSNamesystem.java:1735)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.mkdirs(NameNode.java:542)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)
+)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+Hive history file=/tmp/hadoop/hive_job_log_hadoop_201604132120_43621815.txt
+OK
+Time taken: 3.588 seconds
+OK
+Time taken: 0.089 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.007 seconds
+OK
+Time taken: 0.264 seconds
+OK
+Time taken: 0.067 seconds
+OK
+Time taken: 0.048 seconds
+OK
+Time taken: 0.033 seconds
+Total MapReduce jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 8
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapred.reduce.tasks=<number>
+Starting Job = job_201604132120_0001, Tracking URL = http://belona.c3local:50030/jobdetails.jsp?jobid=job_201604132120_0001
+Kill Command = /home/hadoop/hadoop/bin/../bin/hadoop job  -Dmapred.job.tracker=belona.c3local:9001 -kill job_201604132120_0001
+2016-04-13 21:20:33,813 Stage-1 map = 0%,  reduce = 0%
+2016-04-13 21:20:42,879 Stage-1 map = 1%,  reduce = 0%
+2016-04-13 21:20:45,903 Stage-1 map = 2%,  reduce = 0%
+2016-04-13 21:20:48,925 Stage-1 map = 3%,  reduce = 0%
+2016-04-13 21:20:51,946 Stage-1 map = 5%,  reduce = 0%
+2016-04-13 21:20:54,967 Stage-1 map = 7%,  reduce = 0%
+2016-04-13 21:20:57,988 Stage-1 map = 8%,  reduce = 0%
+2016-04-13 21:21:01,007 Stage-1 map = 9%,  reduce = 0%
+2016-04-13 21:21:04,027 Stage-1 map = 11%,  reduce = 0%
+2016-04-13 21:21:07,047 Stage-1 map = 12%,  reduce = 0%
+2016-04-13 21:21:13,084 Stage-1 map = 13%,  reduce = 0%
+2016-04-13 21:21:16,104 Stage-1 map = 14%,  reduce = 0%
+2016-04-13 21:21:25,158 Stage-1 map = 15%,  reduce = 0%
+2016-04-13 21:21:31,204 Stage-1 map = 16%,  reduce = 0%
+2016-04-13 21:21:43,299 Stage-1 map = 17%,  reduce = 0%
+2016-04-13 21:22:01,462 Stage-1 map = 18%,  reduce = 1%
+2016-04-13 21:22:06,510 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:22:15,603 Stage-1 map = 20%,  reduce = 1%
+2016-04-13 21:22:27,708 Stage-1 map = 21%,  reduce = 1%
+2016-04-13 21:22:51,912 Stage-1 map = 22%,  reduce = 1%
+2016-04-13 21:23:28,136 Stage-1 map = 23%,  reduce = 1%
+2016-04-13 21:24:28,470 Stage-1 map = 23%,  reduce = 1%
+2016-04-13 21:24:37,523 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:24:43,562 Stage-1 map = 15%,  reduce = 1%
+2016-04-13 21:24:57,649 Stage-1 map = 16%,  reduce = 1%
+2016-04-13 21:25:00,668 Stage-1 map = 17%,  reduce = 1%
+2016-04-13 21:25:04,695 Stage-1 map = 13%,  reduce = 1%
+2016-04-13 21:25:06,715 Stage-1 map = 14%,  reduce = 1%
+2016-04-13 21:25:12,750 Stage-1 map = 15%,  reduce = 1%
+2016-04-13 21:25:21,800 Stage-1 map = 16%,  reduce = 1%
+2016-04-13 21:25:27,835 Stage-1 map = 17%,  reduce = 1%
+2016-04-13 21:25:33,872 Stage-1 map = 18%,  reduce = 1%
+2016-04-13 21:25:42,922 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:25:51,972 Stage-1 map = 20%,  reduce = 1%
+2016-04-13 21:26:01,023 Stage-1 map = 16%,  reduce = 1%
+2016-04-13 21:26:10,074 Stage-1 map = 17%,  reduce = 1%
+2016-04-13 21:26:22,140 Stage-1 map = 18%,  reduce = 1%
+2016-04-13 21:26:28,173 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:26:37,222 Stage-1 map = 20%,  reduce = 1%
+2016-04-13 21:26:49,284 Stage-1 map = 21%,  reduce = 1%
+2016-04-13 21:27:10,392 Stage-1 map = 22%,  reduce = 1%
+2016-04-13 21:27:46,575 Stage-1 map = 23%,  reduce = 1%
+2016-04-13 21:28:46,880 Stage-1 map = 23%,  reduce = 1%
+2016-04-13 21:29:00,949 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:29:19,036 Stage-1 map = 15%,  reduce = 1%
+2016-04-13 21:29:22,054 Stage-1 map = 11%,  reduce = 1%
+2016-04-13 21:29:25,070 Stage-1 map = 12%,  reduce = 1%
+2016-04-13 21:29:34,115 Stage-1 map = 13%,  reduce = 1%
+2016-04-13 21:29:37,131 Stage-1 map = 14%,  reduce = 1%
+2016-04-13 21:29:43,161 Stage-1 map = 15%,  reduce = 1%
+2016-04-13 21:29:49,190 Stage-1 map = 16%,  reduce = 1%
+2016-04-13 21:29:52,206 Stage-1 map = 17%,  reduce = 1%
+2016-04-13 21:29:55,223 Stage-1 map = 18%,  reduce = 1%
+2016-04-13 21:30:04,274 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:30:13,318 Stage-1 map = 20%,  reduce = 1%
+2016-04-13 21:30:19,349 Stage-1 map = 16%,  reduce = 1%
+2016-04-13 21:30:31,409 Stage-1 map = 17%,  reduce = 1%
+2016-04-13 21:30:40,453 Stage-1 map = 18%,  reduce = 1%
+2016-04-13 21:30:46,483 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:30:55,527 Stage-1 map = 20%,  reduce = 1%
+2016-04-13 21:31:07,583 Stage-1 map = 21%,  reduce = 1%
+2016-04-13 21:31:25,664 Stage-1 map = 22%,  reduce = 1%
+2016-04-13 21:31:52,783 Stage-1 map = 23%,  reduce = 1%
+2016-04-13 21:32:53,045 Stage-1 map = 23%,  reduce = 1%
+2016-04-13 21:33:19,161 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:33:34,229 Stage-1 map = 15%,  reduce = 1%
+2016-04-13 21:33:40,257 Stage-1 map = 16%,  reduce = 1%
+2016-04-13 21:33:41,264 Stage-1 map = 11%,  reduce = 1%
+2016-04-13 21:33:43,274 Stage-1 map = 12%,  reduce = 1%
+2016-04-13 21:33:49,302 Stage-1 map = 13%,  reduce = 1%
+2016-04-13 21:33:55,330 Stage-1 map = 14%,  reduce = 1%
+2016-04-13 21:34:01,357 Stage-1 map = 15%,  reduce = 1%
+2016-04-13 21:34:04,372 Stage-1 map = 16%,  reduce = 1%
+2016-04-13 21:34:10,399 Stage-1 map = 17%,  reduce = 1%
+2016-04-13 21:34:16,425 Stage-1 map = 18%,  reduce = 1%
+2016-04-13 21:34:22,452 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:34:31,494 Stage-1 map = 20%,  reduce = 1%
+2016-04-13 21:34:34,509 Stage-1 map = 16%,  reduce = 1%
+2016-04-13 21:34:46,560 Stage-1 map = 17%,  reduce = 1%
+2016-04-13 21:34:55,599 Stage-1 map = 18%,  reduce = 1%
+2016-04-13 21:35:04,638 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:35:10,664 Stage-1 map = 20%,  reduce = 1%
+2016-04-13 21:35:22,716 Stage-1 map = 21%,  reduce = 1%
+2016-04-13 21:35:43,805 Stage-1 map = 22%,  reduce = 1%
+2016-04-13 21:36:16,948 Stage-1 map = 23%,  reduce = 1%
+2016-04-13 21:37:17,178 Stage-1 map = 23%,  reduce = 1%
+2016-04-13 21:37:41,271 Stage-1 map = 19%,  reduce = 1%
+2016-04-13 21:37:50,306 Stage-1 map = 15%,  reduce = 1%
+2016-04-13 21:37:59,342 Stage-1 map = 12%,  reduce = 1%
+2016-04-13 21:38:07,374 Stage-1 map = 13%,  reduce = 1%
+2016-04-13 21:38:14,405 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_201604132120_0001 with errors
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_201604132120_0001_m_000003
+
+URL:
+  http://belona.c3local:50030/taskdetails.jsp?jobid=job_201604132120_0001&tipid=task_201604132120_0001_m_000003
+-----
+
+FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.ExecDriver
