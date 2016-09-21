@@ -17,7 +17,7 @@ DB_USER="salaak"
 DB_PASS="salaak"
 
 #Web server configuration
-WEB_HOME="/home/flav/salaak/src/www"
+WEB_HOME="/home/flav/SLK/src/www"
 
 
 # Do not edit this part
