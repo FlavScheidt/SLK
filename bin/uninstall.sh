@@ -33,7 +33,7 @@ fi
 echo "[OK] Scripts removed from hadoop home"
 
 #Drop postegres tables
-sql="DROP TABLE IF EXISTS slk_query, slk_node, slk_service, slk_metric, slk_exec, slk_plots, slk_metric_values, slk_exec_time, slk_job, slk_code_sign, slk_job_sign CASCADE"
+sql="DROP TABLE IF EXISTS slk_query, slk_node, slk_service, slk_metric, slk_exec, slk_plots, slk_metric_values, slk_exec_time, slk_job CASCADE"
 psql -c "$sql" ${DB_NAME} ${DB_USER}
 
 if [ $? -ne 0 ]

@@ -25,6 +25,13 @@ then
 	mkdir "$LOG_DIR"
 fi
 
+#Directory for the logs
+PLOT_DIR="$SALAAK_HOME/plots"
+if [ ! -d "$PLOT_DIR" ]
+then
+	mkdir "$PLOT_DIR"
+fi
+
 #Check masters config
 #Check the enviroment vars for hadoop and hive
 check_enviroment_vars
