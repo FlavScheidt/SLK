@@ -54,26 +54,35 @@ then
 			echo "Please check the logs at logs directory"
 			exit 1
 		fi
+		
+		#Configure Hadoop to run with likwid on the slaves
+
+                echo "scp $SALAAK_HOME/bin/hadoop ${i}:~/hadoop"              
+                ssh $i 'bash -s' < $SALAAK_HOME/bin/hadoop_w_likwid.sh
+
 	done
 	echo "[OK] Slaves config"
 else
 	check_microarchitecture
 	server_arch=${arq}
 	echo "[OK] Microarchitecture $arch"
+	
+	mv ${HADOOP_HOME}/bin/hadoop ${HADOOP_HOME}/bin/hadoop_original
+	cp ${SALAAK_HOME}/bin/hadoop ${HADOOP_HOME}/bin/hadoop
 fi
 
 #Copy control scripts to the hadoop dir
 cp ${SALAAK_HOME}/scripts/clean-dfs.sh ${HADOOP_HOME}/clean-dfs.sh
 if [ $? -ne 0 ]
 then
-	echo "[ERROR] Enable to copy script clean-dfs to hadoop home"
+	echo "[ERROR] Unable to copy script clean-dfs to hadoop home"
 	exit 1;
 fi
 
 cp ${SALAAK_HOME}/scripts/kill-everybody.sh ${HADOOP_HOME}/kill-everybody.sh
 if [ $? -ne 0 ]
 then
-	echo "[ERROR] Enable to copy script kill-everybody to hadoop home"
+	echo "[ERROR] Unable to copy script kill-everybody to hadoop home"
 	rm ${HADOOP_HOME}/clean-dfs.sh
 	exit;
 fi

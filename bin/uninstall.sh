@@ -3,19 +3,11 @@
 . "$SALAAK_HOME/config"
 
 #Remove scripts on the hosts
-#if [ ${HADOOP_DISTRIBUTED} = "Y" ]
-#then
-	##Check slaves config
-	#for i in $(cat $HADOOP_HOME/conf/slaves)
-	#do
-		#ssh $i "rm -rf ${HOME}/salaak"
-		#if [ $? -ne 0 ]
-		#then
-			#echo "[ERROR] Enable to remove scripts from slave $i"
-		#fi
-	#done
-#fi
-#echo "[OK] Scripts removed from the slaves"
+for i in $(cat $HADOOP_HOME/conf/slaves)
+do
+	ssh $i "mv ${HADOOP_HOME}/bin/hadoop_original ${HADOOP_HOME}/bin/hadoop"
+done
+echo "[OK] Scripts removed from the slaves"
 
 #Remove scripts from hadoop home
 rm ${HADOOP_HOME}/clean-dfs.sh
