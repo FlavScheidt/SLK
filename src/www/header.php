@@ -100,7 +100,7 @@
 							</li>
 						</ul>
 					</li>
-				   <li class='has-sub'><a href='#'>Comsumption Ranking</a>
+				   <li class='has-sub'><a href='#'>Consumption Ranking</a>
 						<ul>
 							<?php 
 								$sql = "SELECT id, name FROM slk_metric";
@@ -109,7 +109,7 @@
 									
 								while ($line = pg_fetch_assoc($result))
 								{
-									echo "<li><a href='comsumption_ranking.php?metric=",$line['name'],"'>",$line['name'],"</a>";
+									echo "<li><a href='consumption_ranking.php?metric=",$line['name'],"'>",$line['name'],"</a>";
 								}
 							?>
 						</ul>
