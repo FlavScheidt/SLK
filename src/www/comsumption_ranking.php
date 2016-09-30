@@ -4,10 +4,8 @@
 	
 	echo "<h1>".$metric."</h1>";
 	
-	if ($metric = "Energy PKG")
-	{
-		echo "<h2>Average</h2>";
-	}
+	if ($metric == "Energy PKG")
+	echo "<h2>Average</h2>";
 	
 	$sql = "SELECT * FROM return_metrics_comparison('".$metric."')";
 	$result = pg_query($sql)
@@ -44,7 +42,7 @@
 	echo "<center><a class='fancybox' rel='group' href='http://localhost/plots/".str_replace(' ', '', $metric.".query.png")."' title='".$metric."'>";
 	echo "<img src='http://localhost/plots/".str_replace(' ', '', $metric.".query.png")."' alt=''/></a></center>";
 
-	if ($metric = "Energy PKG")
+	if ($metric == "Energy PKG")
 	{
 
 		echo "<h2>Sum</h2>";
