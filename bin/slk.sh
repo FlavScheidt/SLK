@@ -70,10 +70,15 @@ do
 	
 	# Trials
 	trial=0
-	while [ $trial -lt 7 ]
+	while [ $trial -lt 1 ]
 	do
 		trial=`expr $trial + 1`
 		echo "	Trial ${trial} of 7"
+		
+		#If there is any hadoop proccess running,must be stopped
+		stop-all.sh &>> $LOG_HADOOP
+		$HADOOP_HOME/kill-everybody.sh &>> $LOG_HADOOP
+		
 		
 		# Start hadoop
 		start-dfs.sh &>> $LOG_HADOOP

@@ -57,7 +57,7 @@ then
 		
 		#Configure Hadoop to run with likwid on the slaves
 
-                echo "scp $SALAAK_HOME/bin/hadoop ${i}:~/hadoop"              
+                echo "scp $SALAAK_HOME/bin/hadoop_bin ${i}:~/hadoop"              
                 ssh $i 'bash -s' < $SALAAK_HOME/bin/hadoop_w_likwid.sh
 
 	done
@@ -68,7 +68,7 @@ else
 	echo "[OK] Microarchitecture $arch"
 	
 	mv ${HADOOP_HOME}/bin/hadoop ${HADOOP_HOME}/bin/hadoop_original
-	cp ${SALAAK_HOME}/bin/hadoop ${HADOOP_HOME}/bin/hadoop
+	cp ${SALAAK_HOME}/bin/hadoop_bin ${HADOOP_HOME}/bin/hadoop
 fi
 
 #Copy control scripts to the hadoop dir
