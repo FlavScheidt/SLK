@@ -288,7 +288,12 @@ HADOOP_OPTS="$HADOOP_OPTS -Dhadoop.policy.file=$HADOOP_POLICYFILE"
 # vars for likwid execution
 pre_conf_metrics="-g POWER"
 
-likwid-perfscope -p -c N:0-3 $pre_conf_metrics -t 5s "$JAVA" $JAVA_HEAP_MAX $HADOOP_OPTS -classpath "$CLASSPATH" $CLASS "$@" 1> $HOME/statistics/${HOSTNAME}.${COMMAND}.gnu 2> $HOME/statistics/${HOSTNAME}.${COMMAND}.dat
+if [ "${COMMAND}" == "datanode" ] || [ "${COMMAND}" == "tasktracker" ]
+then 
+        likwid-perfscope -p -c N:0-3 $pre_conf_metrics -t 5s "$JAVA" $JAVA_HEAP_MAX $HADOOP_OPTS -classpath "$CLASSPATH" $CLASS "$@" 1> $HOME/statistics/${HOSTNAME}.${COMMAND}.gnu 2> $HOME/statistics/${HOSTNAME}.${COMMAND}.dat
+else
+        exec "$JAVA" $JAVA_HEAP_MAX $HADOOP_OPTS -classpath "$CLASSPATH" $CLASS "$@"
+fi
 
 # likwid-perfscope -p -c N:0 $pre_conf_metrics -t 5s "$JAVA" $JAVA_HEAP_MAX $HADOOP_OPTS -classpath "$CLASSPATH" $CLASS "$@" 1> $HOME/statistics/${HOSTNAME}.${COMMAND}.gnu 2> $HOME/statistics/${HOSTNAME}.${COMMAND}.dat
 

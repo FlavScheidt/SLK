@@ -17,5 +17,5 @@ then
 	done
 else
 	host=$(hostname -f)
-	psql -c "INSERT INTO slk_node (NAME) VALUES ('${host}')" ${DB_NAME} ${DB_USER}  2>&1 | tee -a ${LOG_DIR}/insert.log
+	psql -c "INSERT INTO slk_node (NAME) VALUES ('$host')" ${DB_NAME} ${DB_USER}  2>&1 | tee -a ${LOG_DIR}/insert.log
 fi

@@ -84,6 +84,10 @@ do
 		start-dfs.sh &>> $LOG_HADOOP
 		start-mapred.sh &>> $LOG_HADOOP
 		
+		sleep 40
+		
+		#echo "Leaving sleep mode"
+		
 		# Executes
 		hive -f $query &>> $LOG_FILE
 
@@ -110,30 +114,51 @@ do
 		$HADOOP_HOME/kill-everybody.sh &>> $LOG_HADOOP
 		
 		#Copy all the results to master
-		for slave in $(cat $HADOOP_HOME/conf/slaves)
-		do
-			timestamp=`date "+%F-%R" --reference=${PLOT_DIR}/${slave}.datanode.dat`
+		if [ ${HADOOP_DISTRIBUTED} = "Y" ]
+		then
+			for slave in $(cat $HADOOP_HOME/conf/slaves)
+			do
+				timestamp=`date "+%F-%R" --reference=${PLOT_DIR}/${slave}.datanode.dat`
+				
+				backupFile="${LOG_LIK}/${slave}.datanode.dat.$timestamp.log"
+				mv ${PLOT_DIR}/${slave}.datanode.dat $backupFile
+				
+				backupFile="${LOG_LIK}/${slave}.datanode.gnu.$timestamp.log"
+				mv ${PLOT_DIR}/${slave}.datanode.gnu $backupFile
+				
+				backupFile="${LOG_LIK}/${slave}.tasktracker.dat.$timestamp.log"
+				mv ${PLOT_DIR}/${slave}.tasktracker.dat $backupFile
+				
+				backupFile="${LOG_LIK}/${slave}.tasktracker.gnu.$timestamp.log"
+				mv ${PLOT_DIR}/${slave}.tasktracker.gnu $backupFile
 			
-			backupFile="${LOG_LIK}/${slave}.datanode.dat.$timestamp.log"
-			mv ${PLOT_DIR}/${slave}.datanode.dat $backupFile
+				scp $slave:~/statistics/${slave}.datanode.dat ${PLOT_DIR} &>> $LOG_HADOOP
+				scp $slave:~/statistics/${slave}.datanode.gnu ${PLOT_DIR} &>> $LOG_HADOOP
+				scp $slave:~/statistics/${slave}.tasktracker.dat ${PLOT_DIR} &>> $LOG_HADOOP
+				scp $slave:~/statistics/${slave}.tasktracker.gnu ${PLOT_DIR} &>> $LOG_HADOOP			
+			done
+		else
+			timestamp=`date "+%F-%R" --reference=${PLOT_DIR}/${HOSTNAME}.datanode.dat`
+				
+			backupFile="${LOG_LIK}/${HOSTNAME}.datanode.dat.$timestamp.log"
+			mv ${PLOT_DIR}/${HOSTNAME}.datanode.dat $backupFile
 			
-			backupFile="${LOG_LIK}/${slave}.datanode.gnu.$timestamp.log"
-			mv ${PLOT_DIR}/${slave}.datanode.gnu $backupFile
+			backupFile="${LOG_LIK}/${HOSTNAME}.datanode.gnu.$timestamp.log"
+			mv ${PLOT_DIR}/${HOSTNAME}.datanode.gnu $backupFile
 			
-			backupFile="${LOG_LIK}/${slave}.tasktracker.dat.$timestamp.log"
-			mv ${PLOT_DIR}/${slave}.tasktracker.dat $backupFile
+			backupFile="${LOG_LIK}/${HOSTNAME}.tasktracker.dat.$timestamp.log"
+			mv ${PLOT_DIR}/${HOSTNAME}.tasktracker.dat $backupFile
 			
-			backupFile="${LOG_LIK}/${slave}.tasktracker.gnu.$timestamp.log"
-			mv ${PLOT_DIR}/${slave}.tasktracker.gnu $backupFile
-		
-			scp $slave:~/statistics/${slave}.datanode.dat ${PLOT_DIR} &>> $LOG_HADOOP
-			scp $slave:~/statistics/${slave}.datanode.gnu ${PLOT_DIR} &>> $LOG_HADOOP
-			scp $slave:~/statistics/${slave}.tasktracker.dat ${PLOT_DIR} &>> $LOG_HADOOP
-			scp $slave:~/statistics/${slave}.tasktracker.gnu ${PLOT_DIR} &>> $LOG_HADOOP
+			backupFile="${LOG_LIK}/${HOSTNAME}.tasktracker.gnu.$timestamp.log"
+			mv ${PLOT_DIR}/${HOSTNAME}.tasktracker.gnu $backupFile
 			
-		done
-		
-		savePlot "${query%.*}"
+			cp ~/statistics/${HOSTNAME}.datanode.dat ${PLOT_DIR} &>> $LOG_HADOOP
+			cp ~/statistics/${HOSTNAME}.datanode.gnu ${PLOT_DIR} &>> $LOG_HADOOP
+			cp ~/statistics/${HOSTNAME}.tasktracker.dat ${PLOT_DIR} &>> $LOG_HADOOP
+			cp ~/statistics/${HOSTNAME}.tasktracker.gnu ${PLOT_DIR} &>> $LOG_HADOOP	
+		fi
+
+	savePlot "${query%.*}"
 		
 	done
 	echo "************************************************************"

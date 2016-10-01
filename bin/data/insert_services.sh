@@ -11,9 +11,5 @@ fi
 
 psql -c "INSERT INTO slk_service (NAME) VALUES ('tasktracker')" ${DB_NAME} ${DB_USER} 2>&1 | tee -a ${LOG_DIR}/insert.log
 
-if [ ${HADOOP_DISTRIBUTED} = "Y" ]
-then
-	psql -c "INSERT INTO slk_service (NAME) VALUES ('datanode')" ${DB_NAME} ${DB_USER} 2>&1 | tee -a ${LOG_DIR}/insert.log
-else
-	psql -c "INSERT INTO slk_service (NAME) VALUES ('secondarynamenode')" ${DB_NAME} ${DB_USER} 2>&1 | tee -a ${LOG_DIR}/insert.log
-fi
+psql -c "INSERT INTO slk_service (NAME) VALUES ('datanode')" ${DB_NAME} ${DB_USER} 2>&1 | tee -a ${LOG_DIR}/insert.log
+
