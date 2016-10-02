@@ -84,6 +84,6 @@ add_procedures_postgres()
 	
 	for arq in *.sql
 	do
-		psql -f "${arq}" ${DB_NAME} ${DB_USER} 2>&1 | tee -a ${LOG_DIR}/tables.log
+		psql -f "${arq}" -U salaak salaak_30 2>&1 | tee -a ${LOG_DIR}/tables.log
 	done
 }

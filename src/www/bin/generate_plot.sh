@@ -60,7 +60,7 @@ echo "set xtics" &>> ${FILE_OUT}
 echo "set ytics nomirror" &>> ${FILE_OUT}
 echo "set y2tics" &>> ${FILE_OUT}
 echo "set xrange [0: $x_limit ]" &>> ${FILE_OUT}
-echo "set yrange [16:]" &>> ${FILE_OUT}
+#echo "set yrange [16:]" &>> ${FILE_OUT}
 echo "set style rect fs transparent solid 0.25 noborder" &>> ${FILE_OUT}
 
 i=0

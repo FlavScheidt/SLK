@@ -88,7 +88,7 @@ BEGIN
 
 	RETURN QUERY
 		SELECT
-			temp_slk_plots_sum.job				as job,
+			temp_slk_plots_sum.job			as job,
 			AVG(temp_slk_plots_sum.mean)		as sm,
 			AVG(temp_slk_plots_sum.peak)		as peak
 		FROM 	temp_slk_plots_sum

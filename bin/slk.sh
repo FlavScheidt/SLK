@@ -70,7 +70,7 @@ do
 	
 	# Trials
 	trial=0
-	while [ $trial -lt 1 ]
+	while [ $trial -lt 7 ]
 	do
 		trial=`expr $trial + 1`
 		echo "	Trial ${trial} of 7"

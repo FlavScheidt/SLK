@@ -63,67 +63,67 @@ UPDATE slk_plots SET val = temp_around.val_new
 
 
 --Metrics
---CREATE TEMPORARY TABLE temp_lines_metrics AS
-	--SELECT 
-		--slk_metric_values.id_exec,
-		--slk_exec_time.id_query,
-		--slk_metric_values.id_metric,
-		--val
-	--FROM 	slk_metric_values left join
-			--slk_exec
-				--on (slk_exec.id = slk_metric_values.id_exec) left join
-			--slk_exec_time
-				--on (slk_exec_time.id = slk_exec.id_exec_time)
-	--WHERE id_metric in (8,9) and (val < 1000000 or val > 1)
---;
+CREATE TEMPORARY TABLE temp_lines_metrics AS
+	SELECT 
+		slk_metric_values.id_exec,
+		slk_exec_time.id_query,
+		slk_metric_values.id_metric,
+		val
+	FROM 	slk_metric_values left join
+			slk_exec
+				on (slk_exec.id = slk_metric_values.id_exec) left join
+			slk_exec_time
+				on (slk_exec_time.id = slk_exec.id_exec_time)
+	WHERE id_metric in (8,9) and (val < 1000000 or val > 1)
+;
 
---CREATE TEMPORARY TABLE temp_avg AS 
---SELECT
-	--id_query,
-	--id_metric,
-	--avg(val)		as val
---FROM temp_lines_metrics
---GROUP BY id_query, id_metric
---;
+CREATE TEMPORARY TABLE temp_avg AS 
+SELECT
+	id_query,
+	id_metric,
+	avg(val)		as val
+FROM temp_lines_metrics
+GROUP BY id_query, id_metric
+;
 
---CREATE TEMPORARY TABLE temp_id_exec AS
---SELECT
-	--temp_lines_metrics.id_exec,
-	--temp_avg.id_query,
-	--temp_avg.id_metric,
-	--temp_avg.val
---FROM	temp_avg 			left join
-		--temp_lines_metrics
-			--on (temp_avg.id_query = temp_lines_metrics.id_query and temp_avg.id_metric = temp_lines_metrics.id_metric)
---;
+CREATE TEMPORARY TABLE temp_id_exec AS
+SELECT
+	temp_lines_metrics.id_exec,
+	temp_avg.id_query,
+	temp_avg.id_metric,
+	temp_avg.val
+FROM	temp_avg 			left join
+		temp_lines_metrics
+			on (temp_avg.id_query = temp_lines_metrics.id_query and temp_avg.id_metric = temp_lines_metrics.id_metric)
+;
 
---CREATE TEMPORARY TABLE temp_wrong AS
---SELECT
-	--slk_metric_values.id_exec,
-	--slk_exec_time.id_query,
-	--slk_metric_values.id_metric,
-	--slk_metric_values.val
---FROM 	slk_metric_values	left join
-		--slk_exec	
-			--on (slk_metric_values.id_exec = slk_exec.id) left join
-		--slk_exec_time
-			--on (slk_exec.id_exec_time = slk_exec_time.id)
---WHERE (slk_metric_values.val > 100000 or slk_metric_values.val < 1) and id_metric in (8,9)
---;
+CREATE TEMPORARY TABLE temp_wrong AS
+SELECT
+	slk_metric_values.id_exec,
+	slk_exec_time.id_query,
+	slk_metric_values.id_metric,
+	slk_metric_values.val
+FROM 	slk_metric_values	left join
+		slk_exec	
+			on (slk_metric_values.id_exec = slk_exec.id) left join
+		slk_exec_time
+			on (slk_exec.id_exec_time = slk_exec_time.id)
+WHERE (slk_metric_values.val > 100000 or slk_metric_values.val < 1) and id_metric in (8,9)
+;
 
---CREATE TEMPORARY TABLE temp_final AS
---SELECT
-	--temp_wrong.id_exec,
-	--temp_wrong.id_metric,
-	--temp_wrong.val			as old_val,
-	--temp_id_exec.val
---FROM 	temp_wrong left join
-		--temp_id_exec
-			--On (temp_wrong.id_query = temp_id_exec.id_query)
---;
+CREATE TEMPORARY TABLE temp_final AS
+SELECT
+	temp_wrong.id_exec,
+	temp_wrong.id_metric,
+	temp_wrong.val			as old_val,
+	temp_id_exec.val
+FROM 	temp_wrong left join
+		temp_id_exec
+			On (temp_wrong.id_query = temp_id_exec.id_query)
+;
 
---UPDATE slk_metric_values SET val = temp_final.val
-	--FROM temp_final
-	--WHERE slk_metric_values.id_exec = temp_final.id_exec 
-		--and slk_metric_values.id_metric = temp_final.id_metric
---;
+UPDATE slk_metric_values SET val = temp_final.val
+	FROM temp_final
+	WHERE slk_metric_values.id_exec = temp_final.id_exec 
+		and slk_metric_values.id_metric = temp_final.id_metric
+;
